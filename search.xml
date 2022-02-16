@@ -31,9 +31,9 @@
     
     
     <entry>
-      <title>HEXO博客通过GIT备份</title>
-      <link href="/2021/10/16/Hexo/HexoCit/"/>
-      <url>/2021/10/16/Hexo/HexoCit/</url>
+      <title>HEXO博客配置GIT及备份</title>
+      <link href="/2021/10/16/Hexo/HexoGit/"/>
+      <url>/2021/10/16/Hexo/HexoGit/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -89,7 +89,7 @@
       <link href="/2021/10/15/VSCode/%E8%A7%A3%E5%86%B3VSCode&#39;%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC&#39;%E6%8A%A5%E9%94%99/"/>
       <url>/2021/10/15/VSCode/%E8%A7%A3%E5%86%B3VSCode&#39;%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC&#39;%E6%8A%A5%E9%94%99/</url>
       
-        <content type="html"><![CDATA[<h1 id="解决VSCODE”因为在此系统上禁止运行脚本”报错"><a href="#解决VSCODE”因为在此系统上禁止运行脚本”报错" class="headerlink" title="解决VSCODE”因为在此系统上禁止运行脚本”报错"></a>解决VSCODE”因为在此系统上禁止运行脚本”报错</h1><p>学习hexo搭建的时候，在VSCODE中使用hexo命令，结果报错：</p><p><img src="/img%5CVSCode%5C%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC.png" alt="禁止运行脚本" title="因为在此系统上禁止运行脚本"></p><p>找了下原因，是因为PowerShell执行策略的问题</p><ul><li>以管理员身份运行vscode</li><li>执行：get-ExecutionPolicy，显示Restricted，表示状态是禁止的;</li></ul><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">get-ExecutionPolicy</span></span><br></pre></td></tr></table></figure><ul><li>执行：set-ExecutionPolicy RemoteSigned;</li></ul><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set-ExecutionPolicy</span> RemoteSigned</span><br></pre></td></tr></table></figure><ul><li>这时再执行get-ExecutionPolicy，就显示RemoteSigned;</li></ul><p><img src="/img%5CVSCode%5C%E8%A7%A3%E5%86%B3.png" alt="禁止运行脚本" title="问题解决"></p><p>问题就解决了</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="解决VSCODE”因为在此系统上禁止运行脚本”报错"><a href="#解决VSCODE”因为在此系统上禁止运行脚本”报错" class="headerlink" title="解决VSCODE”因为在此系统上禁止运行脚本”报错"></a>解决VSCODE”因为在此系统上禁止运行脚本”报错</h1><p>学习hexo搭建的时候，在VSCODE中使用hexo命令，结果报错：</p><p><img src="/./img/VSCode/DisableToRun.png" alt="禁止运行脚本" title="因为在此系统上禁止运行脚本"></p><p>找了下原因，是因为PowerShell执行策略的问题</p><ul><li>以管理员身份运行vscode</li><li>执行：get-ExecutionPolicy，显示Restricted，表示状态是禁止的;</li></ul><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">get-ExecutionPolicy</span></span><br></pre></td></tr></table></figure><ul><li>执行：set-ExecutionPolicy RemoteSigned;</li></ul><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set-ExecutionPolicy</span> RemoteSigned</span><br></pre></td></tr></table></figure><ul><li>这时再执行get-ExecutionPolicy，就显示RemoteSigned;</li></ul><p><img src="/./img/VSCode/SetRight.png" alt="禁止运行脚本" title="问题解决"></p><p>问题就解决了</p>]]></content>
       
       
       <categories>
