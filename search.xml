@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>Hexo博客常用转码工具</title>
+      <link href="/2022/02/18/Hexo/HexoTransCode/"/>
+      <url>/2022/02/18/Hexo/HexoTransCode/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML与Markdown转换"><a href="#HTML与Markdown转换" class="headerlink" title="HTML与Markdown转换"></a>HTML与Markdown转换</h1><p><a href="https://www.bejson.com/convert/html2markdown/">https://www.bejson.com/convert/html2markdown/</a></p><h1 id="HTML转为JADE-x2F-PUG"><a href="#HTML转为JADE-x2F-PUG" class="headerlink" title="HTML转为JADE&#x2F;PUG"></a>HTML转为JADE&#x2F;PUG</h1><p><a href="http://html2jade.org/">http://html2jade.org/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> transcoding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HEXO博客配置Live2D</title>
       <link href="/2021/10/23/Hexo/HexoLive2d/"/>
       <url>/2021/10/23/Hexo/HexoLive2d/</url>
       
-        <content type="html"><![CDATA[<h1 id="官网地址配置："><a href="#官网地址配置：" class="headerlink" title="官网地址配置："></a>官网地址配置：</h1><p><a href="https://www.npmjs.com/package/hexo-helper-live2d">https://www.npmjs.com/package/hexo-helper-live2d</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="项目官网地址："><a href="#项目官网地址：" class="headerlink" title="项目官网地址："></a>项目官网地址：</h1><p><a href="https://www.npmjs.com/package/hexo-helper-live2d">https://www.npmjs.com/package/hexo-helper-live2d</a></p>]]></content>
       
       
       <categories>
@@ -23,6 +50,62 @@
             <tag> hexo </tag>
             
             <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于yml语法</title>
+      <link href="/2021/10/23/Hexo/HexoYAML/"/>
+      <url>/2021/10/23/Hexo/HexoYAML/</url>
+      
+        <content type="html"><![CDATA[<h1 id="项目官网地址："><a href="#项目官网地址：" class="headerlink" title="项目官网地址："></a>项目官网地址：</h1><p><a href="https://yaml.org/">https://yaml.org/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> yml </tag>
+            
+            <tag> yaml </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO网页更加丝滑</title>
+      <link href="/2021/10/22/Hexo/HexoPWA/"/>
+      <url>/2021/10/22/Hexo/HexoPWA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="butterfly主题支持的PWA官网插件"><a href="#butterfly主题支持的PWA官网插件" class="headerlink" title="butterfly主题支持的PWA官网插件"></a>butterfly主题支持的PWA官网插件</h1><p><a href="https://github.com/JLHwung/hexo-offline">https://github.com/JLHwung/hexo-offline</a></p><h1 id="PWA配置"><a href="#PWA配置" class="headerlink" title="PWA配置"></a>PWA配置</h1><p>作者: Jerry<br>連結: <a href="https://butterfly.js.org/posts/ceeb73f/#PWA">https://butterfly.js.org/posts/ceeb73f/#PWA</a><br>來源: Butterfly</p><p>要为Butterfly配上 PWA 特性, 你需要如下几个步骤:</p><ol><li><p>打开 hexo 工作目录</p></li><li><p><code>npm install hexo-offline --save</code> 或者 <code>yarn add hexo-offline</code></p></li><li><p>在根目录创建 <code>hexo-offline.config.cjs </code>文件，并增加以下内容。</p></li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// offline config passed to workbox-build.</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">globPatterns</span>: [<span class="string">&#x27;**/*.&#123;js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2&#125;&#x27;</span>],</span><br><span class="line">  <span class="comment">// 静态文件合集，如果你的站点使用了例如 webp 格式的文件，请将文件类型添加进去。</span></span><br><span class="line">  <span class="attr">globDirectory</span>: <span class="string">&#x27;public&#x27;</span>,</span><br><span class="line">  <span class="attr">swDest</span>: <span class="string">&#x27;public/service-worker.js&#x27;</span>,</span><br><span class="line">  <span class="attr">maximumFileSizeToCacheInBytes</span>: <span class="number">10485760</span>, <span class="comment">// 缓存的最大文件大小，以字节为单位。</span></span><br><span class="line">  <span class="attr">skipWaiting</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">clientsClaim</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">runtimeCaching</span>: [ <span class="comment">// 如果你需要加载 CDN 资源，请配置该选项，如果没有，可以不配置。</span></span><br><span class="line">    <span class="comment">// CDNs - should be CacheFirst, since they should be used specific versions so should not change</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">urlPattern</span>: <span class="regexp">/^https:\/\/cdn\.example\.com\/.*/</span>, <span class="comment">// 可替换成你的 URL</span></span><br><span class="line">      <span class="attr">handler</span>: <span class="string">&#x27;CacheFirst&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>更多内容请查看 <a href="https://github.com/JLHwung/hexo-offline">hexo-offline</a>的官方文档</p><ol start="4"><li>在主题配置文件中开启 pwa 选项。</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pwa:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">manifest:</span> <span class="string">/img/pwa/manifest.json</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/img/pwa/apple-touch-icon.png</span></span><br><span class="line">  <span class="attr">favicon_32_32:</span> <span class="string">/img/pwa/32.png</span></span><br><span class="line">  <span class="attr">favicon_16_16:</span> <span class="string">/img/pwa/16.png</span></span><br><span class="line">  <span class="attr">mask_icon:</span> <span class="string">/img/pwa/safari-pinned-tab.svg</span></span><br></pre></td></tr></table></figure><ol start="5"><li>在创建source&#x2F;目录中创建manifest.json文件。</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;:</span> <span class="string">&quot;string&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;short_name&quot;:</span> <span class="string">&quot;Junzhou&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;theme_color&quot;:</span> <span class="string">&quot;#49b1f5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;background_color&quot;:</span> <span class="string">&quot;#49b1f5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;display&quot;:</span> <span class="string">&quot;standalone&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;scope&quot;:</span> <span class="string">&quot;/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;start_url&quot;:</span> <span class="string">&quot;/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;icons&quot;:</span> [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/36.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;36x36&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/48.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;48x48&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/72.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;72x72&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/96.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;96x96&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/144.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;144x144&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/192.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;192x192&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/512.png&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;512x512&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">          &#125;</span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">&quot;splash_pages&quot;:</span> <span class="literal">null</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><p>你也可以通过 <a href="https://app-manifest.firebaseapp.com/">Web App Manifest</a>快速创建<code>manifest.json</code>。（Web App Manifest 要求至少包含一个 512*512 像素的图标）</p><ol start="6"><li>可以通过<code>Chrome</code>插件<code>Lighthouse</code>检查 PWA 配置是否生效以及配置是否正确。<ul><li>打开博客页面</li><li>启动<code>Lighthouse</code>插件 (Lighthouse插件要求至少包含一个 512*512 像素的图标)<br>关于 PWA（渐进式增强 Web 应用）的更多内容请参閲 <a href="https://developers.google.com/web/tools/lighthouse/audits/address-bar">Google Tools for Web Developers</a></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> pwa </tag>
             
         </tags>
       
@@ -76,9 +159,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -103,9 +186,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -130,9 +213,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
             <tag> npm </tag>
             
@@ -203,7 +286,7 @@
       <link href="/2017/10/05/Git/GitStart/"/>
       <url>/2017/10/05/Git/GitStart/</url>
       
-        <content type="html"><![CDATA[<h1 id="在GitHub上创建仓库"><a href="#在GitHub上创建仓库" class="headerlink" title="在GitHub上创建仓库"></a>在GitHub上创建仓库</h1><h2 id="进入官网："><a href="#进入官网：" class="headerlink" title="进入官网："></a>进入官网：</h2><ul><li>首先需要进入GitHub官网，登陆自己的账号（如果没有账号，就先注册一个，这里不再细说）。</li></ul><h2 id="创建仓库："><a href="#创建仓库：" class="headerlink" title="创建仓库："></a>创建仓库：</h2><ul><li>你可以点击右上角的<code>十</code>号，然后点击New repository即可进入创建仓库界面：</li></ul><p><img src="/images/Git/BuildRepository.png" alt="创建仓库1" title="创建仓库1"></p><ul><li>创建一个仓库，如下图所示：</li></ul><p><img src="/images/Git/CreateRepository.png" alt="创建仓库2" title="创建仓库2"></p><h2 id="记录SSH-key："><a href="#记录SSH-key：" class="headerlink" title="记录SSH key："></a>记录SSH key：</h2><ul><li>创建好的仓库如图所示：</li><li>点击绿色“Clone or download”按钮，然后会出现下面的小弹窗：</li></ul><p><img src="/images/Git/CopySSH.png" alt="记录SSH key" title="记录SSH key"></p><ul><li>记下这个地址，后面有用。</li></ul><h1 id="Git-Bash上配置SSH-key"><a href="#Git-Bash上配置SSH-key" class="headerlink" title="Git Bash上配置SSH key"></a>Git Bash上配置SSH key</h1><h2 id="安装Git客户端"><a href="#安装Git客户端" class="headerlink" title="安装Git客户端"></a>安装Git客户端</h2><ul><li>从官网下载并安装Git客户端：<br> <a href="https://git-scm.com/">https://git-scm.com/</a></li><li>整个安装过程一直点击下一步就行，还要注意不要有中文路径。</li></ul><h2 id="绑定账号："><a href="#绑定账号：" class="headerlink" title="绑定账号："></a>绑定账号：</h2><ul><li>安装完成后，打开安装好的Git Bash程序：</li><li>填写用户名</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br></pre></td></tr></table></figure><ul><li>填写用户邮箱</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure><h2 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h2><ul><li>判断有无SSH key：</li></ul><p>如果你是第一次操作，是没有这个key的，你可以输入下面的命令来检查是否已经有了：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure><p>如果已经生成过了，就什么都不会显示，如果没有生成过，则会出现下面的提示</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">bash: <span class="built_in">cd</span>: /c/Users/XXXX/.ssh: No such file or directory</span><br></pre></td></tr></table></figure><ul><li>生成SSH密钥</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure><p>以上代码执行之后，会让你设置密码，推荐全都不要设置，直接连按三次回车键。</p><ul><li>一般默认生成路径为 &#x2F;C&#x2F;Users&#x2F;XXXX&#x2F;.ssh</li><li>记得选择显示隐藏项目(有时会不显示)</li></ul><p><img src="/images/Git/RightHideFiles.png" alt="显示隐藏项目" title="显示隐藏项目"></p><ul><li>SSH key生成之后，按照上图所标识的路径找到这个文件：</li></ul><p><img src="/images/Git/id_ssh.png" alt="SSH" title="记录SSH"></p><ul><li>将这个文件，以文本方式打开，你会发现一个以ssh-rsa开头的字符串，如图所示</li></ul><p><img src="/images/Git/ssh-rsa.png" alt="ssh-rsa文件" title="ssh-rsa文件"><br>将这个字符串全部复制下来（注意：别忘了开头的“ssh-rsa”）</p><h1 id="本机与GitHub连接"><a href="#本机与GitHub连接" class="headerlink" title="本机与GitHub连接"></a>本机与GitHub连接</h1><h2 id="创建本地Git仓库："><a href="#创建本地Git仓库：" class="headerlink" title="创建本地Git仓库："></a>创建本地Git仓库：</h2><ul><li>在项目根目录内，点击鼠标右键</li><li>点击“Git Bash Here”，打开Git Bash 命令行界面；</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><ul><li><p>你会发现你的项目文件夹内多了一个“.git”的文件夹，同时你的命令行界面后面会多一个“(master)”或“（main）”标识，表明你已经把这个文件夹设置为了Git本地仓库；</p></li><li><p>还记得最开始记下的那个GitHub上的仓库SSH地址吗？现在终于派上用场了，在命令行中键入如下命令：</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin “你的仓库SSH地址”</span><br></pre></td></tr></table></figure><h2 id="配置GitHub上的SSH-key："><a href="#配置GitHub上的SSH-key：" class="headerlink" title="配置GitHub上的SSH key："></a>配置GitHub上的SSH key：</h2><ul><li>进入GitHub官网，登录你的账号，点击头像，在下拉框内选择“Setting”选项，如下图：</li></ul><p><img src="/images/Git/GitSetting.png" alt="Setting" title="Setting"></p><ul><li>然后在左侧菜单找到“SSH and GPG keys”选项，在右侧界面点击绿色的“New SSH Key”按钮，如下图：</li></ul><p><img src="/images/Git/addSSH.png" alt="New SSH Key" title="New SSH Key"></p><ul><li>打开的SSH key配置界面如下：</li></ul><p><img src="/images/Git/NewSSH.png" alt="添加SSH" title="添加SSH"><br>1 &#x3D; SSH key 的名字，随便填一个，你自己知道就可以了；<br>2 &#x3D; SSK key 将刚才我们复制的那个“ssh-rsa”开头的字符串粘贴进去；</p><ul><li>然后点击下方的绿色“Add SSH key”按钮，即可配置完成。</li></ul><p>到此，我们完成了GitHub配置SSH key的整个过程，下面开始操作本机与GitHub的连接。</p><h1 id="项目上传至GitHub"><a href="#项目上传至GitHub" class="headerlink" title="项目上传至GitHub"></a>项目上传至GitHub</h1><h2 id="拉取GitHub："><a href="#拉取GitHub：" class="headerlink" title="拉取GitHub："></a>拉取GitHub：</h2><ul><li>上面我们已经完成了本机与GitHub的连接，我们先在GitHub上拉取一下，键入以下命令：</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure><h2 id="配置-gitignore文件："><a href="#配置-gitignore文件：" class="headerlink" title="配置.gitignore文件："></a>配置.gitignore文件：</h2><ul><li>不同类型的项目，配置.gitignore文件也不一样，以后写篇博客将我常用的说一下</li></ul><h2 id="提交项目到GitHub："><a href="#提交项目到GitHub：" class="headerlink" title="提交项目到GitHub："></a>提交项目到GitHub：</h2><ul><li>注意代码：<code>git add .</code> <code>add</code>与<code>.</code>中间是有一个空格的</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;你的备注信息&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><ul><li>然后你就可以去你的GitHub上仓库内刷新一下界面，就会看到你刚刚上传的工程啦</li></ul><h2 id="至此，将项目上传至GitHub的全部流程已经结束。"><a href="#至此，将项目上传至GitHub的全部流程已经结束。" class="headerlink" title="至此，将项目上传至GitHub的全部流程已经结束。"></a>至此，将项目上传至GitHub的全部流程已经结束。</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="在GitHub上创建仓库"><a href="#在GitHub上创建仓库" class="headerlink" title="在GitHub上创建仓库"></a>在GitHub上创建仓库</h1><h2 id="进入官网："><a href="#进入官网：" class="headerlink" title="进入官网："></a>进入官网：</h2><ul><li>首先需要进入GitHub官网，登陆自己的账号（如果没有账号，就先注册一个，这里不再细说）。</li></ul><h2 id="创建仓库："><a href="#创建仓库：" class="headerlink" title="创建仓库："></a>创建仓库：</h2><ul><li>你可以点击右上角的<code>十</code>号，然后点击New repository即可进入创建仓库界面：</li></ul><p><img src="/images/Git/BuildRepository.png" alt="创建仓库1" title="创建仓库1"></p><ul><li>创建一个仓库，如下图所示：</li></ul><p><img src="/images/Git/CreateRepository.png" alt="创建仓库2" title="创建仓库2"></p><h2 id="记录SSH-key："><a href="#记录SSH-key：" class="headerlink" title="记录SSH key："></a>记录SSH key：</h2><ul><li>创建好的仓库如图所示：</li><li>点击绿色“Clone or download”按钮，然后会出现下面的小弹窗：</li></ul><p><img src="/images/Git/CopySSH.png" alt="记录SSH key" title="记录SSH key"></p><ul><li>记下这个地址，后面有用。</li></ul><h1 id="Git-Bash上配置SSH-key"><a href="#Git-Bash上配置SSH-key" class="headerlink" title="Git Bash上配置SSH key"></a>Git Bash上配置SSH key</h1><h2 id="安装Git客户端"><a href="#安装Git客户端" class="headerlink" title="安装Git客户端"></a>安装Git客户端</h2><ul><li>从官网下载并安装Git客户端：<br> <a href="https://git-scm.com/">https://git-scm.com/</a></li><li>整个安装过程一直点击下一步就行，还要注意不要有中文路径。</li></ul><h2 id="绑定账号："><a href="#绑定账号：" class="headerlink" title="绑定账号："></a>绑定账号：</h2><ul><li>安装完成后，打开安装好的Git Bash程序：</li><li>填写用户名</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br></pre></td></tr></table></figure><ul><li>填写用户邮箱</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure><h2 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h2><ul><li>判断有无SSH key：</li></ul><p>如果你是第一次操作，是没有这个key的，你可以输入下面的命令来检查是否已经有了：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure><p>如果已经生成过了，就什么都不会显示，如果没有生成过，则会出现下面的提示</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">bash: <span class="built_in">cd</span>: /c/Users/XXXX/.ssh: No such file or directory</span><br></pre></td></tr></table></figure><ul><li>生成SSH密钥</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure><p>以上代码执行之后，会让你设置密码，推荐全都不要设置，直接连按三次回车键。</p><ul><li>一般默认生成路径为 &#x2F;C&#x2F;Users&#x2F;XXXX&#x2F;.ssh</li><li>记得选择显示隐藏项目(有时会不显示)</li></ul><p><img src="/images/Git/RightHideFiles.png" alt="显示隐藏项目" title="显示隐藏项目"></p><ul><li>SSH key生成之后，按照上图所标识的路径找到这个文件：</li></ul><p><img src="/images/Git/id_ssh.png" alt="SSH" title="记录SSH"></p><ul><li>将这个文件，以文本方式打开，你会发现一个以ssh-rsa开头的字符串，如图所示</li></ul><p><img src="/images/Git/ssh-rsa.png" alt="ssh-rsa文件" title="ssh-rsa文件"><br>将这个字符串全部复制下来（注意：别忘了开头的“ssh-rsa”）</p><h1 id="本机与GitHub连接"><a href="#本机与GitHub连接" class="headerlink" title="本机与GitHub连接"></a>本机与GitHub连接</h1><h2 id="创建本地Git仓库："><a href="#创建本地Git仓库：" class="headerlink" title="创建本地Git仓库："></a>创建本地Git仓库：</h2><ul><li>在项目根目录内，点击鼠标右键</li><li>点击“Git Bash Here”，打开Git Bash 命令行界面；</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><ul><li><p>你会发现你的项目文件夹内多了一个“.git”的文件夹，同时你的命令行界面后面会多一个“(master)”或“（main）”标识，表明你已经把这个文件夹设置为了Git本地仓库；</p></li><li><p>还记得最开始记下的那个GitHub上的仓库SSH地址吗？现在终于派上用场了，在命令行中键入如下命令：</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin “你的仓库SSH地址”</span><br></pre></td></tr></table></figure><h2 id="配置GitHub上的SSH-key："><a href="#配置GitHub上的SSH-key：" class="headerlink" title="配置GitHub上的SSH key："></a>配置GitHub上的SSH key：</h2><ul><li>进入GitHub官网，登录你的账号，点击头像，在下拉框内选择“Setting”选项，如下图：</li></ul><p><img src="/images/Git/GitSetting.png" alt="Setting" title="Setting"></p><ul><li>然后在左侧菜单找到“SSH and GPG keys”选项，在右侧界面点击绿色的“New SSH Key”按钮，如下图：</li></ul><p><img src="/images/Git/addSSH.png" alt="New SSH Key" title="New SSH Key"></p><ul><li>打开的SSH key配置界面如下：</li></ul><p><img src="/images/Git/NewSSH.png" alt="添加SSH" title="添加SSH"><br>1 &#x3D; SSH key 的名字，随便填一个，你自己知道就可以了；<br>2 &#x3D; SSK key 将刚才我们复制的那个“ssh-rsa”开头的字符串粘贴进去；</p><ul><li>然后点击下方的绿色“Add SSH key”按钮，即可配置完成。</li></ul><p>到此，我们完成了GitHub配置SSH key的整个过程，下面开始操作本机与GitHub的连接。</p><h1 id="项目上传至GitHub"><a href="#项目上传至GitHub" class="headerlink" title="项目上传至GitHub"></a>项目上传至GitHub</h1><h2 id="拉取GitHub："><a href="#拉取GitHub：" class="headerlink" title="拉取GitHub："></a>拉取GitHub：</h2><ul><li>上面我们已经完成了本机与GitHub的连接，我们先在GitHub上拉取一下，键入以下命令：</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure><h2 id="配置-gitignore文件："><a href="#配置-gitignore文件：" class="headerlink" title="配置.gitignore文件："></a>配置.gitignore文件：</h2><ul><li>不同类型的项目，配置.gitignore文件也不一样，以后写篇博客将我常用的说一下</li></ul><h2 id="提交项目到GitHub："><a href="#提交项目到GitHub：" class="headerlink" title="提交项目到GitHub："></a>提交项目到GitHub：</h2><ul><li>注意代码：<code>git add .</code> <code>add</code>与<code>.</code>中间是有一个空格的</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;你的备注信息&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><ul><li>然后你就可以去你的GitHub上仓库内刷新一下界面，就会看到你刚刚上传的工程啦</li></ul><h2 id="至此，将项目上传至GitHub的全部流程已经结束。"><a href="#至此，将项目上传至GitHub的全部流程已经结束。" class="headerlink" title="至此，将项目上传至GitHub的全部流程已经结束。"></a>至此，将项目上传至GitHub的全部流程已经结束。</h2>]]></content>
       
       
       <categories>
