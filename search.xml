@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>关于占位图导致的加载卡顿</title>
+      <link href="/2022/02/19/Hexo/hexoPicHost/"/>
+      <url>/2022/02/19/Hexo/hexoPicHost/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于占位图导致的加载卡顿"><a href="#关于占位图导致的加载卡顿" class="headerlink" title="关于占位图导致的加载卡顿"></a>关于占位图导致的加载卡顿</h1><h2 id="状况"><a href="#状况" class="headerlink" title="状况"></a>状况</h2><ul><li>开始以为是服务器在国外的原因</li><li>调用后台发现，图片加载时间过长</li><li>占位图反应延时居然比Github的图床时间都长</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 图床，solution </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HEXO博客评论区</title>
       <link href="/2022/02/18/Hexo/hexoComments/"/>
       <url>/2022/02/18/Hexo/hexoComments/</url>
