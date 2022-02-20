@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>HEXO博客的CDN</title>
-      <link href="/2022/02/20/Hexo/12HexoCDN/"/>
-      <url>/2022/02/20/Hexo/12HexoCDN/</url>
-      
-        <content type="html"><![CDATA[<h1 id="腾讯云凭据已经占用"><a href="#腾讯云凭据已经占用" class="headerlink" title="腾讯云凭据已经占用"></a>腾讯云凭据已经占用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">腾讯云凭据已经占用</span><br></pre></td></tr></table></figure><ul><li><p>Coding 创建账号与腾讯云账号合并<br><a href="https://help.coding.net/docs/member/personal-account/account-merger.html#faq">https://help.coding.net/docs/member/personal-account/account-merger.html#faq</a></p></li><li><p>绑定相同邮箱</p></li><li><p>确认合并账号</p></li><li><p>注销腾讯云团队</p></li><li><p>重新绑定腾讯云</p></li><li><p>绑定</p></li></ul><h1 id="腾讯云"><a href="#腾讯云" class="headerlink" title="腾讯云"></a>腾讯云</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">未开通CDN服务,请开通后使用此接口(cdn[#ResourceNotFound.CdnUserNotExists])</span><br></pre></td></tr></table></figure><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> solution </tag>
-            
-            <tag> cdn </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>HEXO博客常用插件</title>
       <link href="/2022/02/20/Hexo/13HexoPlugin/"/>
       <url>/2022/02/20/Hexo/13HexoPlugin/</url>
@@ -49,9 +20,38 @@
       
         <tags>
             
+            <tag> solution </tag>
+            
             <tag> hexo </tag>
             
+            <tag> cdn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO博客的CDN</title>
+      <link href="/2022/02/20/Hexo/12HexoCDN/"/>
+      <url>/2022/02/20/Hexo/12HexoCDN/</url>
+      
+        <content type="html"><![CDATA[<h1 id="腾讯云凭据已经占用"><a href="#腾讯云凭据已经占用" class="headerlink" title="腾讯云凭据已经占用"></a>腾讯云凭据已经占用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">腾讯云凭据已经占用</span><br></pre></td></tr></table></figure><ul><li><p>Coding 创建账号与腾讯云账号合并<br><a href="https://help.coding.net/docs/member/personal-account/account-merger.html#faq">https://help.coding.net/docs/member/personal-account/account-merger.html#faq</a></p></li><li><p>绑定相同邮箱</p></li><li><p>确认合并账号</p></li><li><p>注销腾讯云团队</p></li><li><p>重新绑定腾讯云</p></li><li><p>绑定</p></li></ul><h1 id="腾讯云"><a href="#腾讯云" class="headerlink" title="腾讯云"></a>腾讯云</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">未开通CDN服务,请开通后使用此接口(cdn[#ResourceNotFound.CdnUserNotExists])</span><br></pre></td></tr></table></figure><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> solution </tag>
+            
+            <tag> hexo </tag>
             
             <tag> cdn </tag>
             
@@ -78,9 +78,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> solution </tag>
+            
+            <tag> hexo </tag>
             
             <tag> cdn </tag>
             
@@ -107,38 +107,11 @@
       
         <tags>
             
+            <tag> solution </tag>
+            
             <tag> hexo </tag>
             
             <tag> 图床 </tag>
-            
-            <tag> solution </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>HEXO博客评论区</title>
-      <link href="/2022/02/18/Hexo/10HexoComments/"/>
-      <url>/2022/02/18/Hexo/10HexoComments/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-Twikoo"><a href="#1-Twikoo" class="headerlink" title="1.Twikoo"></a>1.Twikoo</h1><h2 id="环境配置（国内访问速度较慢）"><a href="#环境配置（国内访问速度较慢）" class="headerlink" title="环境配置（国内访问速度较慢）"></a>环境配置（国内访问速度较慢）</h2><ul><li><a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li><li><a href="https://cloud.mongodb.com/">https://cloud.mongodb.com/</a></li><li><a href="https://vercel.com/">https://vercel.com/</a></li></ul><h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=205905942&bvid=BV1Fh411e7ZH&cid=349476933&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div><h2 id="文字教程"><a href="#文字教程" class="headerlink" title="文字教程"></a>文字教程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意:Vercel 部署的环境需配合 1.4.0 以上版本的 twikoo.js 使用</span><br></pre></td></tr></table></figure><ol><li>申请 MongoDB (opens new window)账号</li><li>创建免费 MongoDB 数据库，区域推荐选择 AWS &#x2F; N. Virginia (us-east-1)</li><li>在 Clusters 页面点击 CONNECT，按步骤设置允许所有 IP 地址的连接（为什么？ (opens new window)），创建数据库用户，并记录数据库连接字符串，请将连接字符串中的 <password> 修改为数据库密码</li><li>申请 Vercel (opens new window)账号</li><li>点击以下按钮将 Twikoo 一键部署到 Vercel(opens new window)</li><li>进入 Settings - Environment Variables，添加环境变量 MONGODB_URI，值为第 3 步的数据库连接字符串</li><li>进入 Overview，点击 Domains 下方的链接，如果环境配置正确，可以看到 “Twikoo 云函数运行正常” 的提示<br>Vercel Domains（包含 https:&#x2F;&#x2F; 前缀，例如 <a href="https://xxx.vercel.app)即为您的环境/">https://xxx.vercel.app）即为您的环境</a> id</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> twikoo </tag>
             
         </tags>
       
@@ -166,6 +139,33 @@
             <tag> hexo </tag>
             
             <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO博客评论区</title>
+      <link href="/2022/02/18/Hexo/10HexoComments/"/>
+      <url>/2022/02/18/Hexo/10HexoComments/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-Twikoo"><a href="#1-Twikoo" class="headerlink" title="1.Twikoo"></a>1.Twikoo</h1><h2 id="环境配置（国内访问速度较慢）"><a href="#环境配置（国内访问速度较慢）" class="headerlink" title="环境配置（国内访问速度较慢）"></a>环境配置（国内访问速度较慢）</h2><ul><li><a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li><li><a href="https://cloud.mongodb.com/">https://cloud.mongodb.com/</a></li><li><a href="https://vercel.com/">https://vercel.com/</a></li></ul><h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=205905942&bvid=BV1Fh411e7ZH&cid=349476933&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div><h2 id="文字教程"><a href="#文字教程" class="headerlink" title="文字教程"></a>文字教程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意:Vercel 部署的环境需配合 1.4.0 以上版本的 twikoo.js 使用</span><br></pre></td></tr></table></figure><ol><li>申请 MongoDB (opens new window)账号</li><li>创建免费 MongoDB 数据库，区域推荐选择 AWS &#x2F; N. Virginia (us-east-1)</li><li>在 Clusters 页面点击 CONNECT，按步骤设置允许所有 IP 地址的连接（为什么？ (opens new window)），创建数据库用户，并记录数据库连接字符串，请将连接字符串中的 <password> 修改为数据库密码</li><li>申请 Vercel (opens new window)账号</li><li>点击以下按钮将 Twikoo 一键部署到 Vercel(opens new window)</li><li>进入 Settings - Environment Variables，添加环境变量 MONGODB_URI，值为第 3 步的数据库连接字符串</li><li>进入 Overview，点击 Domains 下方的链接，如果环境配置正确，可以看到 “Twikoo 云函数运行正常” 的提示<br>Vercel Domains（包含 https:&#x2F;&#x2F; 前缀，例如 <a href="https://xxx.vercel.app)即为您的环境/">https://xxx.vercel.app）即为您的环境</a> id</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> twikoo </tag>
             
         </tags>
       
@@ -329,9 +329,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -356,9 +356,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -383,11 +383,11 @@
       
         <tags>
             
+            <tag> git </tag>
+            
             <tag> hexo </tag>
             
             <tag> npm </tag>
-            
-            <tag> git </tag>
             
             <tag> note.js </tag>
             
