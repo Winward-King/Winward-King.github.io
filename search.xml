@@ -8,7 +8,7 @@
       <link href="/2022/02/20/Hexo/HexoCDN/"/>
       <url>/2022/02/20/Hexo/HexoCDN/</url>
       
-        <content type="html"><![CDATA[<h1 id="腾讯云凭据已经占用"><a href="#腾讯云凭据已经占用" class="headerlink" title="腾讯云凭据已经占用"></a>腾讯云凭据已经占用</h1><ul><li><p>Coding 创建账号与腾讯云账号合并<br><a href="https://help.coding.net/docs/member/personal-account/account-merger.html#faq">https://help.coding.net/docs/member/personal-account/account-merger.html#faq</a></p></li><li><p>绑定相同邮箱</p></li><li><p>确认合并账号</p></li><li><p>注销腾讯云团队</p></li><li><p>重新绑定腾讯云</p></li><li><p>绑定</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="腾讯云凭据已经占用"><a href="#腾讯云凭据已经占用" class="headerlink" title="腾讯云凭据已经占用"></a>腾讯云凭据已经占用</h1><ul><li><p>Coding 创建账号与腾讯云账号合并<br><a href="https://help.coding.net/docs/member/personal-account/account-merger.html#faq">https://help.coding.net/docs/member/personal-account/account-merger.html#faq</a></p></li><li><p>绑定相同邮箱</p></li><li><p>确认合并账号</p></li><li><p>注销腾讯云团队</p></li><li><p>重新绑定腾讯云</p></li><li><p>绑定</p></li></ul><h1 id="腾讯云"><a href="#腾讯云" class="headerlink" title="腾讯云"></a>腾讯云</h1><p>未开通CDN服务,请开通后使用此接口(cdn[#ResourceNotFound.CdnUserNotExists])</p><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1>]]></content>
       
       
       <categories>
@@ -244,9 +244,9 @@
             
             <tag> git </tag>
             
-            <tag> markdown </tag>
-            
             <tag> vscode </tag>
+            
+            <tag> markdown </tag>
             
         </tags>
       
