@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>HEXO博客图床</title>
+      <link href="/2022/02/20/Hexo/14HexoPicHost/"/>
+      <url>/2022/02/20/Hexo/14HexoPicHost/</url>
+      
+        <content type="html"><![CDATA[<h1 id="群晖图床"><a href="#群晖图床" class="headerlink" title="群晖图床"></a>群晖图床</h1><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1><h1 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h1><h1 id="QQ空间图床（不推荐）"><a href="#QQ空间图床（不推荐）" class="headerlink" title="QQ空间图床（不推荐）"></a>QQ空间图床（不推荐）</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> solution </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> cdn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HEXO博客常用插件</title>
       <link href="/2022/02/20/Hexo/13HexoPlugin/"/>
       <url>/2022/02/20/Hexo/13HexoPlugin/</url>
@@ -62,35 +91,6 @@
     
     
     <entry>
-      <title>HEXO博客图床</title>
-      <link href="/2022/02/20/Hexo/14HexoPicHost/"/>
-      <url>/2022/02/20/Hexo/14HexoPicHost/</url>
-      
-        <content type="html"><![CDATA[<h1 id="群晖图床"><a href="#群晖图床" class="headerlink" title="群晖图床"></a>群晖图床</h1><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1><h1 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h1><h1 id="QQ空间图床（不推荐）"><a href="#QQ空间图床（不推荐）" class="headerlink" title="QQ空间图床（不推荐）"></a>QQ空间图床（不推荐）</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> solution </tag>
-            
-            <tag> hexo </tag>
-            
-            <tag> cdn </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决关于Hexo博客浏览卡顿的记录</title>
       <link href="/2022/02/19/Hexo/11HexoRepair/"/>
       <url>/2022/02/19/Hexo/11HexoRepair/</url>
@@ -120,36 +120,9 @@
     
     
     <entry>
-      <title>通过inject添加样式表魔改主题</title>
-      <link href="/2022/02/18/Hexo/09HexoInject/"/>
-      <url>/2022/02/18/Hexo/09HexoInject/</url>
-      
-        <content type="html"><![CDATA[<h1 id="通过添加css更改主题样式"><a href="#通过添加css更改主题样式" class="headerlink" title="通过添加css更改主题样式"></a>通过添加css更改主题样式</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 文章页背景 */</span></span><br><span class="line"><span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span> &#123;</span><br><span class="line">    <span class="comment">/* 以下代表白色透明度为0.3 */</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* 所有背景（包括首页卡片、文章页、页面页等） */</span></span><br><span class="line">  <span class="selector-id">#aside_content</span> <span class="selector-class">.card-widget</span>, <span class="selector-id">#recent-posts</span>&gt;<span class="selector-class">.recent-post-item</span>, <span class="selector-class">.layout_page</span>&gt;<span class="selector-tag">div</span><span class="selector-pseudo">:first</span>-child<span class="selector-pseudo">:not</span>(<span class="selector-class">.recent-posts</span>), <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#page</span>, <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span>, <span class="selector-class">.read-mode</span> <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span>&#123;</span><br><span class="line">    <span class="comment">/* 以下代表白色透明度为0.3 */</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> css </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>HEXO博客评论区</title>
-      <link href="/2022/02/18/Hexo/10HexoComments/"/>
-      <url>/2022/02/18/Hexo/10HexoComments/</url>
+      <link href="/2022/02/19/Hexo/10HexoComments/"/>
+      <url>/2022/02/19/Hexo/10HexoComments/</url>
       
         <content type="html"><![CDATA[<h1 id="1-Twikoo"><a href="#1-Twikoo" class="headerlink" title="1.Twikoo"></a>1.Twikoo</h1><h2 id="环境配置（国内访问速度较慢）"><a href="#环境配置（国内访问速度较慢）" class="headerlink" title="环境配置（国内访问速度较慢）"></a>环境配置（国内访问速度较慢）</h2><ul><li><a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li><li><a href="https://cloud.mongodb.com/">https://cloud.mongodb.com/</a></li><li><a href="https://vercel.com/">https://vercel.com/</a></li></ul><h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=205905942&bvid=BV1Fh411e7ZH&cid=349476933&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div><h2 id="文字教程"><a href="#文字教程" class="headerlink" title="文字教程"></a>文字教程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意:Vercel 部署的环境需配合 1.4.0 以上版本的 twikoo.js 使用</span><br></pre></td></tr></table></figure><ol><li>申请 MongoDB (opens new window)账号</li><li>创建免费 MongoDB 数据库，区域推荐选择 AWS &#x2F; N. Virginia (us-east-1)</li><li>在 Clusters 页面点击 CONNECT，按步骤设置允许所有 IP 地址的连接（为什么？ (opens new window)），创建数据库用户，并记录数据库连接字符串，请将连接字符串中的 <password> 修改为数据库密码</li><li>申请 Vercel (opens new window)账号</li><li>点击以下按钮将 Twikoo 一键部署到 Vercel(opens new window)</li><li>进入 Settings - Environment Variables，添加环境变量 MONGODB_URI，值为第 3 步的数据库连接字符串</li><li>进入 Overview，点击 Domains 下方的链接，如果环境配置正确，可以看到 “Twikoo 云函数运行正常” 的提示<br>Vercel Domains（包含 https:&#x2F;&#x2F; 前缀，例如 <a href="https://xxx.vercel.app)即为您的环境/">https://xxx.vercel.app）即为您的环境</a> id</li></ol>]]></content>
       
@@ -174,9 +147,36 @@
     
     
     <entry>
+      <title>通过Inject添加样式表魔改主题</title>
+      <link href="/2022/02/19/Hexo/09HexoInject/"/>
+      <url>/2022/02/19/Hexo/09HexoInject/</url>
+      
+        <content type="html"><![CDATA[<h1 id="通过添加css更改主题样式"><a href="#通过添加css更改主题样式" class="headerlink" title="通过添加css更改主题样式"></a>通过添加css更改主题样式</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 文章页背景 */</span></span><br><span class="line"><span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span> &#123;</span><br><span class="line">    <span class="comment">/* 以下代表白色透明度为0.3 */</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* 所有背景（包括首页卡片、文章页、页面页等） */</span></span><br><span class="line">  <span class="selector-id">#aside_content</span> <span class="selector-class">.card-widget</span>, <span class="selector-id">#recent-posts</span>&gt;<span class="selector-class">.recent-post-item</span>, <span class="selector-class">.layout_page</span>&gt;<span class="selector-tag">div</span><span class="selector-pseudo">:first</span>-child<span class="selector-pseudo">:not</span>(<span class="selector-class">.recent-posts</span>), <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#page</span>, <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span>, <span class="selector-class">.read-mode</span> <span class="selector-class">.layout_post</span>&gt;<span class="selector-id">#post</span>&#123;</span><br><span class="line">    <span class="comment">/* 以下代表白色透明度为0.3 */</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">3</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>运维博客常用网站汇总</title>
-      <link href="/2022/02/18/Hexo/08HexoWWWTop01/"/>
-      <url>/2022/02/18/Hexo/08HexoWWWTop01/</url>
+      <link href="/2022/02/19/Hexo/08HexoWWWTop01/"/>
+      <url>/2022/02/19/Hexo/08HexoWWWTop01/</url>
       
         <content type="html"><![CDATA[<h1 id="博客框架文档"><a href="#博客框架文档" class="headerlink" title="博客框架文档"></a>博客框架文档</h1><ul><li>hexo-中文文档<br><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></li></ul><h1 id="butterfly主题文档"><a href="#butterfly主题文档" class="headerlink" title="butterfly主题文档"></a>butterfly主题文档</h1><p>- </p><p><a href="https://github.com/jerryc127/butterfly.js.org">https://github.com/jerryc127/butterfly.js.org</a></p><h1 id="图标网站"><a href="#图标网站" class="headerlink" title="图标网站"></a>图标网站</h1><ul><li><p>fontawesome-图标库<br><a href="https://fontawesome.com/icons?from=io">https://fontawesome.com/icons?from=io</a></p></li><li><p>iconfont-阿里巴巴矢量图标库<br><a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></p></li></ul><h1 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h1><ul><li>tiny-图片无损压缩<br><a href="https://tinypng.com/">https://tinypng.com/</a></li><li></li></ul><h1 id="HTML与Markdown转换"><a href="#HTML与Markdown转换" class="headerlink" title="HTML与Markdown转换"></a>HTML与Markdown转换</h1><p><a href="https://www.bejson.com/convert/html2markdown/">https://www.bejson.com/convert/html2markdown/</a></p><h1 id="HTML转为JADE-x2F-PUG"><a href="#HTML转为JADE-x2F-PUG" class="headerlink" title="HTML转为JADE&#x2F;PUG"></a>HTML转为JADE&#x2F;PUG</h1><p><a href="http://html2jade.org/">http://html2jade.org/</a></p><h1 id="评论区管理"><a href="#评论区管理" class="headerlink" title="评论区管理"></a>评论区管理</h1><ul><li>twikoo<br><a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li><li>mongodb<br><a href="https://cloud.mongodb.com/">https://cloud.mongodb.com/</a></li><li>vercel<br><a href="https://vercel.com/login">https://vercel.com/login</a></li></ul><h1 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h1><ul><li><p>腾讯云<br><a href="https://cloud.tencent.com/">https://cloud.tencent.com/</a></p></li><li><p>阿里云</p></li><li><p>又拍云</p></li></ul>]]></content>
       
@@ -201,9 +201,36 @@
     
     
     <entry>
+      <title>HEXO博客配置Live2D</title>
+      <link href="/2022/02/19/Hexo/07HexoLive2d/"/>
+      <url>/2022/02/19/Hexo/07HexoLive2d/</url>
+      
+        <content type="html"><![CDATA[<h1 id="项目Git地址："><a href="#项目Git地址：" class="headerlink" title="项目Git地址："></a>项目Git地址：</h1><ul><li><a href="https://www.npmjs.com/package/hexo-helper-live2d">https://www.npmjs.com/package/hexo-helper-live2d</a></li></ul><h1 id="API-参考文档"><a href="#API-参考文档" class="headerlink" title="API 参考文档"></a>API 参考文档</h1><ul><li><a href="https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init">https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</a></li></ul><h1 id="配置文件常用参数"><a href="#配置文件常用参数" class="headerlink" title="配置文件常用参数"></a>配置文件常用参数</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Live2D</span></span><br><span class="line"><span class="comment">## https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># enable: false</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span> <span class="comment"># 默认</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="comment"># scriptFrom: jsdelivr # jsdelivr CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: unpkg # unpkg CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span> <span class="comment"># 调试, 是否在控制台输出日志</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span>  <span class="string">.\live2dmodels\live2d-widget-model-unitychan</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">1</span></span><br><span class="line">    <span class="attr">hHeadPos:</span> <span class="number">0.5</span></span><br><span class="line">    <span class="attr">vHeadPos:</span> <span class="number">0.618</span></span><br><span class="line">    <span class="comment"># npm-module package name live2d-widget-model-wanko</span></span><br><span class="line">    <span class="comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span></span><br><span class="line">    <span class="comment"># use: ./wives/wanko # 相对于博客根目录的路径</span></span><br><span class="line">    <span class="comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">150</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span> </span><br><span class="line">    <span class="attr">hOffset:</span> <span class="number">40</span></span><br><span class="line">    <span class="attr">vOffset:</span> <span class="number">-20</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.5</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于yaml语法</title>
-      <link href="/2021/10/23/Hexo/06HexoYAML/"/>
-      <url>/2021/10/23/Hexo/06HexoYAML/</url>
+      <link href="/2022/02/18/Hexo/06HexoYAML/"/>
+      <url>/2022/02/18/Hexo/06HexoYAML/</url>
       
         <content type="html"><![CDATA[<h1 id="项目官网地址："><a href="#项目官网地址：" class="headerlink" title="项目官网地址："></a>项目官网地址：</h1><p><a href="https://yaml.org/">https://yaml.org/</a></p><p>简书转载<br><a href="https://www.jianshu.com/p/a65e692edd5a">https://www.jianshu.com/p/a65e692edd5a</a></p><h1 id="yml语法"><a href="#yml语法" class="headerlink" title="yml语法"></a>yml语法</h1>]]></content>
       
@@ -230,36 +257,9 @@
     
     
     <entry>
-      <title>HEXO博客配置Live2D</title>
-      <link href="/2021/10/23/Hexo/07HexoLive2d/"/>
-      <url>/2021/10/23/Hexo/07HexoLive2d/</url>
-      
-        <content type="html"><![CDATA[<h1 id="项目Git地址："><a href="#项目Git地址：" class="headerlink" title="项目Git地址："></a>项目Git地址：</h1><ul><li><a href="https://www.npmjs.com/package/hexo-helper-live2d">https://www.npmjs.com/package/hexo-helper-live2d</a></li></ul><h1 id="API-参考文档"><a href="#API-参考文档" class="headerlink" title="API 参考文档"></a>API 参考文档</h1><ul><li><a href="https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init">https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</a></li></ul><h1 id="配置文件常用参数"><a href="#配置文件常用参数" class="headerlink" title="配置文件常用参数"></a>配置文件常用参数</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Live2D</span></span><br><span class="line"><span class="comment">## https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># enable: false</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span> <span class="comment"># 默认</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="comment"># scriptFrom: jsdelivr # jsdelivr CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: unpkg # unpkg CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span> <span class="comment"># 调试, 是否在控制台输出日志</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span>  <span class="string">.\live2dmodels\live2d-widget-model-unitychan</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">1</span></span><br><span class="line">    <span class="attr">hHeadPos:</span> <span class="number">0.5</span></span><br><span class="line">    <span class="attr">vHeadPos:</span> <span class="number">0.618</span></span><br><span class="line">    <span class="comment"># npm-module package name live2d-widget-model-wanko</span></span><br><span class="line">    <span class="comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span></span><br><span class="line">    <span class="comment"># use: ./wives/wanko # 相对于博客根目录的路径</span></span><br><span class="line">    <span class="comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">150</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span> </span><br><span class="line">    <span class="attr">hOffset:</span> <span class="number">40</span></span><br><span class="line">    <span class="attr">vOffset:</span> <span class="number">-20</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.5</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> live2d </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>HEXO网页更加丝滑(PWA)</title>
-      <link href="/2021/10/22/Hexo/05HexoPWA/"/>
-      <url>/2021/10/22/Hexo/05HexoPWA/</url>
+      <link href="/2022/02/18/Hexo/05HexoPWA/"/>
+      <url>/2022/02/18/Hexo/05HexoPWA/</url>
       
         <content type="html"><![CDATA[<h1 id="butterfly主题支持的PWA官网插件-hexo-offline"><a href="#butterfly主题支持的PWA官网插件-hexo-offline" class="headerlink" title="butterfly主题支持的PWA官网插件:hexo-offline"></a>butterfly主题支持的PWA官网插件:hexo-offline</h1><p><a href="https://github.com/JLHwung/hexo-offline">https://github.com/JLHwung/hexo-offline</a></p><ul><li><code>hexo-offline</code> 是一个可以让<code>Hexo</code>博客拥有 <code>PWA </code>支持的插件，能够默认的把站点中<code>public</code>内的所有静态资源包括 <code>html、css、js、image </code>等文件缓存起来，达到离线（无网络环境）可访问的效果，拥有像原生APP一般的丝滑体验。</li></ul><h1 id="PWA介绍"><a href="#PWA介绍" class="headerlink" title="PWA介绍"></a>PWA介绍</h1><ul><li><p>PWA，即 Progressive Web App, 是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。</p></li><li><p>理解： PWA不是某一项技术，或者某一个新的产物；而是一系列Web技术与标准的集合与应用。通过应用这些新的技术与标准，可以从安全、性能和体验三个方面，优化我们的Web App。所以，其实PWA本质上依然是一个Web App。</p></li></ul><p>PWA包含的技术：</p><ul><li>Web App Manifest</li><li>Service Worker</li><li>Cache API 缓存</li><li>Push、Notification 推送与通知</li><li>Background Sync 后台同步</li><li>响应式设计</li></ul><h1 id="PWA使用前提"><a href="#PWA使用前提" class="headerlink" title="PWA使用前提"></a>PWA使用前提</h1><p>你的博客全站资源必须为HTTPS，PWA支持的前提条件。</p><h1 id="PWA配置"><a href="#PWA配置" class="headerlink" title="PWA配置"></a>PWA配置</h1><p>作者: Jerry<br>連結: <a href="https://butterfly.js.org/posts/ceeb73f/#PWA">https://butterfly.js.org/posts/ceeb73f/#PWA</a><br>來源: Butterfly</p><p>要为Butterfly配上 PWA 特性, 你需要如下几个步骤:</p><ol><li><p>打开 hexo 工作目录</p></li><li><p><code>npm install hexo-offline --save</code> 或者 <code>yarn add hexo-offline</code></p></li><li><p>在根目录创建 <code>hexo-offline.config.cjs </code>文件，并增加以下内容。</p></li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// offline config passed to workbox-build.</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">globPatterns</span>: [<span class="string">&#x27;**/*.&#123;js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2&#125;&#x27;</span>],</span><br><span class="line">  <span class="comment">// 静态文件合集，如果你的站点使用了例如 webp 格式的文件，请将文件类型添加进去。</span></span><br><span class="line">  <span class="attr">globDirectory</span>: <span class="string">&#x27;public&#x27;</span>,</span><br><span class="line">  <span class="attr">swDest</span>: <span class="string">&#x27;public/service-worker.js&#x27;</span>,</span><br><span class="line">  <span class="attr">maximumFileSizeToCacheInBytes</span>: <span class="number">10485760</span>, <span class="comment">// 缓存的最大文件大小，以字节为单位。</span></span><br><span class="line">  <span class="attr">skipWaiting</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">clientsClaim</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">runtimeCaching</span>: [ <span class="comment">// 如果你需要加载 CDN 资源，请配置该选项，如果没有，可以不配置。</span></span><br><span class="line">    <span class="comment">// CDNs - should be CacheFirst, since they should be used specific versions so should not change</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">urlPattern</span>: <span class="regexp">/^https:\/\/cdn\.example\.com\/.*/</span>, <span class="comment">// 可替换成你的 URL</span></span><br><span class="line">      <span class="attr">handler</span>: <span class="string">&#x27;CacheFirst&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>更多内容请查看 <a href="https://github.com/JLHwung/hexo-offline">hexo-offline</a>的官方文档</p><ol start="4"><li>在主题配置文件中开启 pwa 选项。</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pwa:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">manifest:</span> <span class="string">/img/pwa/manifest.json</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/img/pwa/apple-touch-icon.png</span></span><br><span class="line">  <span class="attr">favicon_32_32:</span> <span class="string">/img/pwa/32.png</span></span><br><span class="line">  <span class="attr">favicon_16_16:</span> <span class="string">/img/pwa/16.png</span></span><br><span class="line">  <span class="attr">mask_icon:</span> <span class="string">/img/pwa/safari-pinned-tab.svg</span></span><br></pre></td></tr></table></figure><ol start="5"><li>在创建source&#x2F;目录中创建manifest.json文件。</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;:</span> <span class="string">&quot;string&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;short_name&quot;:</span> <span class="string">&quot;Junzhou&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;theme_color&quot;:</span> <span class="string">&quot;#49b1f5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;background_color&quot;:</span> <span class="string">&quot;#49b1f5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;display&quot;:</span> <span class="string">&quot;standalone&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;scope&quot;:</span> <span class="string">&quot;/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;start_url&quot;:</span> <span class="string">&quot;/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;icons&quot;:</span> [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/36.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;36x36&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/48.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;48x48&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/72.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;72x72&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/96.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;96x96&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/144.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;144x144&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/192.png&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;192x192&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;src&quot;:</span> <span class="string">&quot;images/pwaicons/512.png&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;sizes&quot;:</span> <span class="string">&quot;512x512&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">          &#125;</span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">&quot;splash_pages&quot;:</span> <span class="literal">null</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><p>你也可以通过 <a href="https://app-manifest.firebaseapp.com/">Web App Manifest</a>快速创建<code>manifest.json</code>。（Web App Manifest 要求至少包含一个 512*512 像素的图标）</p><ol start="6"><li>可以通过<code>Chrome</code>插件<code>Lighthouse</code>检查 PWA 配置是否生效以及配置是否正确。<ul><li>打开博客页面</li><li>启动<code>Lighthouse</code>插件 (Lighthouse插件要求至少包含一个 512*512 像素的图标)<br>关于 PWA（渐进式增强 Web 应用）的更多内容请参閲 <a href="https://developers.google.com/web/tools/lighthouse/audits/address-bar">Google Tools for Web Developers</a></li></ul></li></ol>]]></content>
       
@@ -276,6 +276,118 @@
             <tag> hexo </tag>
             
             <tag> pwa </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO博客主题配置</title>
+      <link href="/2022/02/17/Hexo/04HexoTheme/"/>
+      <url>/2022/02/17/Hexo/04HexoTheme/</url>
+      
+        <content type="html"><![CDATA[<h1 id="主题的安装与更换"><a href="#主题的安装与更换" class="headerlink" title="主题的安装与更换"></a>主题的安装与更换</h1><h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><ol><li>挑选主题，hexo 官网或 github 下载主题。（HEXO theme）<ul><li>主题支持git、gitee、npm多种方式安装</li><li>这里推荐npm（以插件的形式安装）</li></ul></li><li>下载解压，放到自己博客目录下的 themes 文件夹。</li><li>主题配置，修改_config.yml 参数。</li></ol><h2 id="config-yml中应用主题"><a href="#config-yml中应用主题" class="headerlink" title="_config.yml中应用主题"></a>_config.yml中应用主题</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span> <span class="comment">#更换主题名称</span></span><br></pre></td></tr></table></figure><h1 id="config-yml-配置参数"><a href="#config-yml-配置参数" class="headerlink" title="_config.yml 配置参数"></a>_config.yml 配置参数</h1><h2 id="官方配置说明文档"><a href="#官方配置说明文档" class="headerlink" title="官方配置说明文档"></a>官方配置说明文档</h2><p> 中文文档<br> <a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p><h2 id="网站信息"><a href="#网站信息" class="headerlink" title="网站信息"></a>网站信息</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site修改网站标题、副标题、作者、语言等</span></span><br><span class="line"><span class="attr">title:</span> </span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> </span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN/en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure><h2 id="网站资料"><a href="#网站资料" class="headerlink" title="网站资料"></a>网站资料</h2><h2 id="导航菜单"><a href="#导航菜单" class="headerlink" title="导航菜单"></a>导航菜单</h2><h2 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h2><h1 id="config-butterfly-yml-配置参数"><a href="#config-butterfly-yml-配置参数" class="headerlink" title="_config.butterfly.yml 配置参数"></a>_config.butterfly.yml 配置参数</h1><p>官方配置说明文档<br><a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p><h2 id="社交图标-唤醒QQ对话"><a href="#社交图标-唤醒QQ对话" class="headerlink" title="社交图标 唤醒QQ对话"></a>社交图标 唤醒QQ对话</h2><p>如何唤起qq临时会话</p><h2 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h2><h2 id="文章页相关配置"><a href="#文章页相关配置" class="headerlink" title="文章页相关配置"></a>文章页相关配置</h2><h2 id="复製相关配置"><a href="#复製相关配置" class="headerlink" title="复製相关配置"></a>复製相关配置</h2><h2 id="美化页面显示"><a href="#美化页面显示" class="headerlink" title="美化页面显示"></a>美化页面显示</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 美化页面显示</span></span><br><span class="line"><span class="attr">beautify:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># site/post</span></span><br><span class="line">  <span class="attr">title-prefix-icon:</span> <span class="string">&#x27;\f0c1&#x27;</span></span><br><span class="line">  <span class="attr">title-prefix-icon-color:</span> <span class="string">&quot;#F47466&quot;</span></span><br></pre></td></tr></table></figure><h2 id="加载动画"><a href="#加载动画" class="headerlink" title="加载动画"></a>加载动画</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加载动画 Loading Animation</span></span><br><span class="line"><span class="attr">preloader:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h2 id="预加载"><a href="#预加载" class="headerlink" title="预加载"></a>预加载</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://instant.page/</span></span><br><span class="line"><span class="comment"># prefetch (預加載)</span></span><br><span class="line"><span class="attr">instantpage:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h1 id="主题配置就告一段落了"><a href="#主题配置就告一段落了" class="headerlink" title="主题配置就告一段落了"></a>主题配置就告一段落了</h1><ul><li>下篇文章将介绍 Hexo博客部署在GitHub上，以及通过Git进行备份<br><a href="https://winward-king.github.io/2021/10/16/Hexo/HexoGit/">HEXO博客配置GIT及备份</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO博客配置GIT及备份</title>
+      <link href="/2022/02/17/Hexo/03HexoGit/"/>
+      <url>/2022/02/17/Hexo/03HexoGit/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><ul><li>Git的配置与使用,可以参考我另一篇文章，在此不在赘述。<br><a href="https://winward-king.github.io/2017/10/05/Git/GitStart/">Git配置与使用</a></li></ul><h1 id="Github-配置"><a href="#Github-配置" class="headerlink" title="Github 配置"></a>Github 配置</h1><ul><li>创建一个仓库，名为：自己用户名 + .github.io</li></ul><h2 id="修改博客-config-yml-文件的配置"><a href="#修改博客-config-yml-文件的配置" class="headerlink" title="修改博客 _config.yml 文件的配置"></a>修改博客 _config.yml 文件的配置</h2><ul><li>打开博客根目录的 _config.yml 文件，将一下信息添加到里面去。</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://自己用户名.github.io</span></span><br></pre></td></tr></table></figure><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/自己用户名/自己用户名.github.io.git</span> <span class="comment">#替换成自己仓库的HTTP URL地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span> <span class="comment"># main or master选择对应的分支</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HEXO博客搭建</title>
+      <link href="/2022/02/16/Hexo/02HexoStart/"/>
+      <url>/2022/02/16/Hexo/02HexoStart/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>　　上学期间，博主一直用有道云笔记、印象笔记、word和onenode等软件记笔记，查阅起来非常不便。上网冲浪时，偶然间发现博客查阅更加方便，博主便申请了博客园的博客。博客园虽然开放了JS、CSS等权限，不够个性、安全。受各种因素影响博客园经历过整改、文章大量被下架等风波，博主只能将笔记记录方式重心转为硬盘存储。<br>　　随着时间推移，博主发现了一个很好的私人定制化的博客：Hexo博客。Hexo博客能装在Mac、Windows、Linux、群晖等多个系统平台上。支持Markdown语法，可以推送到GIT、GITEE、VPS等平台进行多重备份，并且支持个人域名，配置反向代理等优点，非常满足博主的需求。于是就有了这次HEXO+GIT搭建的笔记。</p><h1 id="软件与平台"><a href="#软件与平台" class="headerlink" title="软件与平台"></a>软件与平台</h1><h2 id="必须的软件："><a href="#必须的软件：" class="headerlink" title="必须的软件："></a>必须的软件：</h2><ul><li>NODE.JS</li><li>GIT</li></ul><h2 id="博客编写的软件"><a href="#博客编写的软件" class="headerlink" title="博客编写的软件"></a>博客编写的软件</h2><ul><li>Visual Studio Code（推荐）</li><li>TYPORA</li></ul><h1 id="安装说明"><a href="#安装说明" class="headerlink" title="安装说明"></a>安装说明</h1><ul><li>node.js 和 Typoro、Git，一路<code>下一步</code>就行了。</li><li>VSCode 安装好之后默认是英文界面，可以在插件市场里搜索 chinese，安装之后重启软件，变成中文版。</li></ul><h1 id="检查是否安装成功"><a href="#检查是否安装成功" class="headerlink" title="检查是否安装成功"></a>检查是否安装成功</h1><ul><li>Windows下用 Win + R 打开运行，输入 cmd 并进入 cmd 窗口查询</li><li>Mac下打开终端，进行查询</li><li>右键打开 Git bash，输入命令查询</li><li>node.js 版本的检查</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><ul><li>npm 版本的检查 (NPM 是随同 NodeJS 一起安装的包管理工具，能解决 NodeJS 代码部署上的很多问题)。</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><ul><li>Git 版本的检查</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure><h1 id="HEXO-的安装"><a href="#HEXO-的安装" class="headerlink" title="HEXO 的安装"></a>HEXO 的安装</h1><p>在 Git bash 或者 CMD 界面执行命令</p><ul><li>安装之前可以先设置一下淘宝镜像加速器(国内访问镜像站快一点)</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><ul><li>全局安装框架</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><ul><li>创建自己的博客目录并安装博客</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 博客的根目录名字</span><br></pre></td></tr></table></figure><ul><li>进入博客的目录</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> 博客的根目录名字</span><br></pre></td></tr></table></figure><ul><li>安装npm依赖环境</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><ul><li>安装 Hexo (Git)部署插件</li></ul><p>请在博客的目录下启动 Git bash，再执行以下代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h1 id="HEXO-常用代码"><a href="#HEXO-常用代码" class="headerlink" title="HEXO 常用代码"></a>HEXO 常用代码</h1><p>清理缓存，会自动删除博客目录下得 public 文件。(hexo cl 是 hexo clean 的简写)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl </span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><p>生成静态页面，重新生成 public 文件。（hexo g 是 hexo generate 的简写)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br></pre></td></tr></table></figure><p>启动本地服务，在 <a href="http://localhost:4000/">http://localhost:4000/</a> 预览效果。（hexo s 是 hexo server 的简写）<br>如果是挂载在群晖等内网系统用 <a href="http://192.168.xxx.xxx:4000，注意端口号是否被占用">http://192.168.xxx.xxx:4000，注意端口号是否被占用</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s <span class="comment">#或者hexo server</span></span><br></pre></td></tr></table></figure><p>部署推送，部署到 github。（hexo d 是 hexo deploy 的简写）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>以上连写示例一（清理缓存 + 生成静态页面 + 在本地预览）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p>以上连写示例二（清理缓存 + 生成静态页面 + 部署推送）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><h1 id="HEXO-博客的基础环境搭建完成"><a href="#HEXO-博客的基础环境搭建完成" class="headerlink" title="HEXO 博客的基础环境搭建完成"></a>HEXO 博客的基础环境搭建完成</h1><ul><li>下一篇文章将介绍主题的安装与配置<br>HEXO博客主题配置</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> npm </tag>
+            
+            <tag> note.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/02/15/Hexo/01hello-world/"/>
+      <url>/2022/02/15/Hexo/01hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> hello world </tag>
             
         </tags>
       
@@ -313,91 +425,6 @@
     
     
     <entry>
-      <title>HEXO博客主题配置</title>
-      <link href="/2021/10/17/Hexo/04HexoTheme/"/>
-      <url>/2021/10/17/Hexo/04HexoTheme/</url>
-      
-        <content type="html"><![CDATA[<h1 id="主题的安装与更换"><a href="#主题的安装与更换" class="headerlink" title="主题的安装与更换"></a>主题的安装与更换</h1><h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><ol><li>挑选主题，hexo 官网或 github 下载主题。（HEXO theme）<ul><li>主题支持git、gitee、npm多种方式安装</li><li>这里推荐npm（以插件的形式安装）</li></ul></li><li>下载解压，放到自己博客目录下的 themes 文件夹。</li><li>主题配置，修改_config.yml 参数。</li></ol><h2 id="config-yml中应用主题"><a href="#config-yml中应用主题" class="headerlink" title="_config.yml中应用主题"></a>_config.yml中应用主题</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span> <span class="comment">#更换主题名称</span></span><br></pre></td></tr></table></figure><h1 id="config-yml-配置参数"><a href="#config-yml-配置参数" class="headerlink" title="_config.yml 配置参数"></a>_config.yml 配置参数</h1><h2 id="官方配置说明文档"><a href="#官方配置说明文档" class="headerlink" title="官方配置说明文档"></a>官方配置说明文档</h2><p> 中文文档<br> <a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p><h2 id="网站信息"><a href="#网站信息" class="headerlink" title="网站信息"></a>网站信息</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site修改网站标题、副标题、作者、语言等</span></span><br><span class="line"><span class="attr">title:</span> </span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> </span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN/en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure><h2 id="网站资料"><a href="#网站资料" class="headerlink" title="网站资料"></a>网站资料</h2><h2 id="导航菜单"><a href="#导航菜单" class="headerlink" title="导航菜单"></a>导航菜单</h2><h2 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h2><h1 id="config-butterfly-yml-配置参数"><a href="#config-butterfly-yml-配置参数" class="headerlink" title="_config.butterfly.yml 配置参数"></a>_config.butterfly.yml 配置参数</h1><p>官方配置说明文档<br><a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p><h2 id="社交图标-唤醒QQ对话"><a href="#社交图标-唤醒QQ对话" class="headerlink" title="社交图标 唤醒QQ对话"></a>社交图标 唤醒QQ对话</h2><p>如何唤起qq临时会话</p><h2 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h2><h2 id="文章页相关配置"><a href="#文章页相关配置" class="headerlink" title="文章页相关配置"></a>文章页相关配置</h2><h2 id="复製相关配置"><a href="#复製相关配置" class="headerlink" title="复製相关配置"></a>复製相关配置</h2><h2 id="美化页面显示"><a href="#美化页面显示" class="headerlink" title="美化页面显示"></a>美化页面显示</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 美化页面显示</span></span><br><span class="line"><span class="attr">beautify:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># site/post</span></span><br><span class="line">  <span class="attr">title-prefix-icon:</span> <span class="string">&#x27;\f0c1&#x27;</span></span><br><span class="line">  <span class="attr">title-prefix-icon-color:</span> <span class="string">&quot;#F47466&quot;</span></span><br></pre></td></tr></table></figure><h2 id="加载动画"><a href="#加载动画" class="headerlink" title="加载动画"></a>加载动画</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加载动画 Loading Animation</span></span><br><span class="line"><span class="attr">preloader:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h2 id="预加载"><a href="#预加载" class="headerlink" title="预加载"></a>预加载</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://instant.page/</span></span><br><span class="line"><span class="comment"># prefetch (預加載)</span></span><br><span class="line"><span class="attr">instantpage:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h1 id="主题配置就告一段落了"><a href="#主题配置就告一段落了" class="headerlink" title="主题配置就告一段落了"></a>主题配置就告一段落了</h1><ul><li>下篇文章将介绍 Hexo博客部署在GitHub上，以及通过Git进行备份<br><a href="https://winward-king.github.io/2021/10/16/Hexo/HexoGit/">HEXO博客配置GIT及备份</a></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>HEXO博客配置GIT及备份</title>
-      <link href="/2021/10/17/Hexo/03HexoGit/"/>
-      <url>/2021/10/17/Hexo/03HexoGit/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><ul><li>Git的配置与使用,可以参考我另一篇文章，在此不在赘述。<br><a href="https://winward-king.github.io/2017/10/05/Git/GitStart/">Git配置与使用</a></li></ul><h1 id="Github-配置"><a href="#Github-配置" class="headerlink" title="Github 配置"></a>Github 配置</h1><ul><li>创建一个仓库，名为：自己用户名 + .github.io</li></ul><h2 id="修改博客-config-yml-文件的配置"><a href="#修改博客-config-yml-文件的配置" class="headerlink" title="修改博客 _config.yml 文件的配置"></a>修改博客 _config.yml 文件的配置</h2><ul><li>打开博客根目录的 _config.yml 文件，将一下信息添加到里面去。</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://自己用户名.github.io</span></span><br></pre></td></tr></table></figure><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/自己用户名/自己用户名.github.io.git</span> <span class="comment">#替换成自己仓库的HTTP URL地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span> <span class="comment"># main or master选择对应的分支</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>HEXO博客搭建</title>
-      <link href="/2021/10/16/Hexo/02HexoStart/"/>
-      <url>/2021/10/16/Hexo/02HexoStart/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>　　上学期间，博主一直用有道云笔记、印象笔记、word和onenode等软件记笔记，查阅起来非常不便。上网冲浪时，偶然间发现博客查阅更加方便，博主便申请了博客园的博客。博客园虽然开放了JS、CSS等权限，不够个性、安全。受各种因素影响博客园经历过整改、文章大量被下架等风波，博主只能将笔记记录方式重心转为硬盘存储。<br>　　随着时间推移，博主发现了一个很好的私人定制化的博客：Hexo博客。Hexo博客能装在Mac、Windows、Linux、群晖等多个系统平台上。支持Markdown语法，可以推送到GIT、GITEE、VPS等平台进行多重备份，并且支持个人域名，配置反向代理等优点，非常满足博主的需求。于是就有了这次HEXO+GIT搭建的笔记。</p><h1 id="软件与平台"><a href="#软件与平台" class="headerlink" title="软件与平台"></a>软件与平台</h1><h2 id="必须的软件："><a href="#必须的软件：" class="headerlink" title="必须的软件："></a>必须的软件：</h2><ul><li>NODE.JS</li><li>GIT</li></ul><h2 id="博客编写的软件"><a href="#博客编写的软件" class="headerlink" title="博客编写的软件"></a>博客编写的软件</h2><ul><li>Visual Studio Code（推荐）</li><li>TYPORA</li></ul><h1 id="安装说明"><a href="#安装说明" class="headerlink" title="安装说明"></a>安装说明</h1><ul><li>node.js 和 Typoro、Git，一路<code>下一步</code>就行了。</li><li>VSCode 安装好之后默认是英文界面，可以在插件市场里搜索 chinese，安装之后重启软件，变成中文版。</li></ul><h1 id="检查是否安装成功"><a href="#检查是否安装成功" class="headerlink" title="检查是否安装成功"></a>检查是否安装成功</h1><ul><li>Windows下用 Win + R 打开运行，输入 cmd 并进入 cmd 窗口查询</li><li>Mac下打开终端，进行查询</li><li>右键打开 Git bash，输入命令查询</li><li>node.js 版本的检查</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><ul><li>npm 版本的检查 (NPM 是随同 NodeJS 一起安装的包管理工具，能解决 NodeJS 代码部署上的很多问题)。</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><ul><li>Git 版本的检查</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure><h1 id="HEXO-的安装"><a href="#HEXO-的安装" class="headerlink" title="HEXO 的安装"></a>HEXO 的安装</h1><p>在 Git bash 或者 CMD 界面执行命令</p><ul><li>安装之前可以先设置一下淘宝镜像加速器(国内访问镜像站快一点)</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><ul><li>全局安装框架</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><ul><li>创建自己的博客目录并安装博客</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 博客的根目录名字</span><br></pre></td></tr></table></figure><ul><li>进入博客的目录</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> 博客的根目录名字</span><br></pre></td></tr></table></figure><ul><li>安装npm依赖环境</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><ul><li>安装 Hexo (Git)部署插件</li></ul><p>请在博客的目录下启动 Git bash，再执行以下代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h1 id="HEXO-常用代码"><a href="#HEXO-常用代码" class="headerlink" title="HEXO 常用代码"></a>HEXO 常用代码</h1><p>清理缓存，会自动删除博客目录下得 public 文件。(hexo cl 是 hexo clean 的简写)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl </span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><p>生成静态页面，重新生成 public 文件。（hexo g 是 hexo generate 的简写)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br></pre></td></tr></table></figure><p>启动本地服务，在 <a href="http://localhost:4000/">http://localhost:4000/</a> 预览效果。（hexo s 是 hexo server 的简写）<br>如果是挂载在群晖等内网系统用 <a href="http://192.168.xxx.xxx:4000，注意端口号是否被占用">http://192.168.xxx.xxx:4000，注意端口号是否被占用</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s <span class="comment">#或者hexo server</span></span><br></pre></td></tr></table></figure><p>部署推送，部署到 github。（hexo d 是 hexo deploy 的简写）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>以上连写示例一（清理缓存 + 生成静态页面 + 在本地预览）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p>以上连写示例二（清理缓存 + 生成静态页面 + 部署推送）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><h1 id="HEXO-博客的基础环境搭建完成"><a href="#HEXO-博客的基础环境搭建完成" class="headerlink" title="HEXO 博客的基础环境搭建完成"></a>HEXO 博客的基础环境搭建完成</h1><ul><li>下一篇文章将介绍主题的安装与配置<br>HEXO博客主题配置</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-            <tag> hexo </tag>
-            
-            <tag> npm </tag>
-            
-            <tag> note.js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决VSCode&#39;因为在此系统上禁止运行脚本&#39;报错</title>
       <link href="/2021/10/15/VSCode/%E8%A7%A3%E5%86%B3VSCode&#39;%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC&#39;%E6%8A%A5%E9%94%99/"/>
       <url>/2021/10/15/VSCode/%E8%A7%A3%E5%86%B3VSCode&#39;%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC&#39;%E6%8A%A5%E9%94%99/</url>
@@ -417,33 +444,6 @@
             <tag> solution </tag>
             
             <tag> vscode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2021/10/15/Hexo/01hello-world/"/>
-      <url>/2021/10/15/Hexo/01hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> HEXO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> hello world </tag>
             
         </tags>
       
