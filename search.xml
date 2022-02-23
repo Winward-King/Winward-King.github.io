@@ -8,7 +8,7 @@
       <link href="/2022/02/20/Hexo/14HexoPicHost/"/>
       <url>/2022/02/20/Hexo/14HexoPicHost/</url>
       
-        <content type="html"><![CDATA[<h1 id="群晖图床"><a href="#群晖图床" class="headerlink" title="群晖图床"></a>群晖图床</h1><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1><h1 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h1><h1 id="QQ空间图床（不推荐）"><a href="#QQ空间图床（不推荐）" class="headerlink" title="QQ空间图床（不推荐）"></a>QQ空间图床（不推荐）</h1><ol><li>需要开通黄钻才能开通外链</li><li>图片格式加载慢</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="PicGo-云服务-x3D-图床"><a href="#PicGo-云服务-x3D-图床" class="headerlink" title="PicGo+云服务&#x3D;图床"></a>PicGo+云服务&#x3D;图床</h1><h1 id="群晖图床"><a href="#群晖图床" class="headerlink" title="群晖图床"></a>群晖图床</h1><h1 id="又拍云"><a href="#又拍云" class="headerlink" title="又拍云"></a>又拍云</h1><h1 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h1><h1 id="QQ空间图床（不推荐）"><a href="#QQ空间图床（不推荐）" class="headerlink" title="QQ空间图床（不推荐）"></a>QQ空间图床（不推荐）</h1><ol><li>需要开通黄钻才能开通外链</li><li>图片格式加载慢</li></ol>]]></content>
       
       
       <categories>
@@ -20,11 +20,11 @@
       
         <tags>
             
-            <tag> solution </tag>
-            
             <tag> hexo </tag>
             
             <tag> cdn </tag>
+            
+            <tag> picgo </tag>
             
         </tags>
       
@@ -245,6 +245,8 @@
         <tags>
             
             <tag> solution </tag>
+            
+            <tag> 腾讯云 </tag>
             
         </tags>
       
