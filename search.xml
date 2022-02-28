@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>Win10下，上行和下载带宽不对等</title>
+      <title>Win10内网环境下，上行和下载带宽不对等</title>
       <link href="/2022/02/23/Synology/01SynologyNet/"/>
       <url>/2022/02/23/Synology/01SynologyNet/</url>
       
-        <content type="html"><![CDATA[<h1 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h1><ul><li>Win10环境下，上行和下载带宽不对等</li><li>复制和下载电影时带宽不对等</li></ul><h1 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a>测试环境</h1><ol><li>电脑硬件相同，双系统</li><li>测试环境Win10 1909 vhd 版 和 win10 </li><li>Esxi环境下群晖系统</li><li>https协议 和 网络文件夹共享</li></ol><h1 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h1><ol><li><p>在Win10 1909 vhd 版系统，https协议和网络文件共享测试结果：上行速度80 MB&#x2F;S 下载速度 115MB&#x2F;S</p></li><li><p>在另一个系统中，https协议和网络文件共享测试结果：上行速度100 MB&#x2F;S 下载速度 100MB&#x2F;S</p></li></ol><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol><li>win10设置重置网络</li><li>命令行重置网络</li><li>升级网卡驱动程序（解决问题）</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h1><ul><li>Win10环境下，上行和下载带宽不对等</li><li>复制和下载电影时带宽不对等</li></ul><h1 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a>测试环境</h1><ol><li>电脑硬件相同，双系统</li><li>测试环境Win10 1909 vhd 版 和 win10 </li><li>Esxi环境下群晖系统</li><li>https协议 和 网络文件夹共享</li></ol><h1 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h1><ol><li><p>在Win10 1909 vhd 版系统，https协议和网络文件共享测试结果：上行速度80 MB&#x2F;S 下载速度 115MB&#x2F;S</p></li><li><p>在另一个win10系统中，https协议和网络文件共享测试结果：上行速度100 MB&#x2F;S 下载速度 100MB&#x2F;S</p></li></ol><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol><li>win10设置重置网络</li><li>命令行重置网络</li></ol><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winsock reset</span><br></pre></td></tr></table></figure><ol start="3"><li>升级网卡驱动程序（解决问题）</li></ol>]]></content>
       
       
       <categories>
           
-          <category> Markdown </category>
+          <category> synology </category>
           
       </categories>
       
@@ -468,9 +468,9 @@
             
             <tag> git </tag>
             
-            <tag> markdown </tag>
-            
             <tag> vscode </tag>
+            
+            <tag> markdown </tag>
             
         </tags>
       
