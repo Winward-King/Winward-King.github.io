@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>HEXO博客:gitee部署及样式无法显示的问题</title>
+      <link href="/2022/03/01/Hexo/16HexoGitee/"/>
+      <url>/2022/03/01/Hexo/16HexoGitee/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Gitee仓库创建与设置"><a href="#Gitee仓库创建与设置" class="headerlink" title="Gitee仓库创建与设置"></a>Gitee仓库创建与设置</h1><p>创建一个仓库，设置为公开或私有都可以（记得Github原来私有仓库要收费的，微软收购后免费的）。<br>仓库名如果设置成和个人空间地址一样，那么访问地址就是： &lt;个人空间地址名&gt;.gitee.io<br>个人空间地址可在个人资料中查看。我的个人空间地址是<code>winward</code>，那么我的博客地址就是：<code>winward.gitee.io</code></p><p>仓库名如果设置成别的，那么访问地址则是：<code>&lt;个人空间地址名&gt;.gitee.io/仓库名</code><br>例如我把仓库名设置为<code>hexo_blog</code>，那么我的博客访问地址就是：<code>winward.gitee.io/hexo_blog</code><br>创建完成后，我们需要在该仓库页面中 点击“服务” &gt; Gitee Pages &gt; 勾选“强制使用HTTPS” &gt; 点击“启动”即可。</p><h1 id="部署命令"><a href="#部署命令" class="headerlink" title="部署命令"></a>部署命令</h1><h2 id="gitee配置"><a href="#gitee配置" class="headerlink" title="gitee配置"></a>gitee配置</h2><p>参见HEXO博客搭建(2):博客配置GIT及备份</p><h2 id="config-yml文件配置"><a href="#config-yml文件配置" class="headerlink" title="_config.yml文件配置"></a>_config.yml文件配置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="comment">#url: https://winward-king.github.io/</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://winward.gitee.io</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br></pre></td></tr></table></figure><p>如果域名带子目录，那么还需要多一步设置：<br>在站点配置文件中找到如下选项，<code>url</code>设置为你的完整域名，<code>root</code>设置为你的子目录。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://winward.gitee.io/hexo_blog</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/hexo_blog/</span></span><br></pre></td></tr></table></figure><p>或者用html语法， <code>root: . </code>(root冒号空格点)</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://winward.gitee.io/hexo_blog</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">.</span></span><br></pre></td></tr></table></figure><p>推送配置</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line"><span class="comment">##    coding: </span></span><br><span class="line"><span class="comment">##    github: https://github.com/Winward-King/Winward-King.github.io.git </span></span><br><span class="line">    <span class="attr">gitee:</span> <span class="string">https://gitee.com/Winward/winward.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><h1 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h1><p>对于GitHub Pages，它支持自动更新，无需额外操作，稍等片刻后访问即可。<br>对于Gitee Pages，由于不支持自动更新，每次执行命令部署后需要手动点击更新，等待更新完成后访问地址即可看到效果。</p><h1 id="hexo部署到gitee没有样式"><a href="#hexo部署到gitee没有样式" class="headerlink" title="hexo部署到gitee没有样式"></a>hexo部署到gitee没有样式</h1><h2 id="排查"><a href="#排查" class="headerlink" title="排查"></a>排查</h2><ol><li>打开gitee生成的hexo网页，也就是我们的博客url，按 F12 进入开发者工具有好多404，一定是请求路径有问题</li><li>点击Network –&gt; 点击某个资源 –&gt; 查看Headers路径，</li><li>配置子目录路径</li><li>重新部署，问题解决</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> gitee </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Win10内网环境下，上行和下载带宽不对等</title>
       <link href="/2022/02/23/Synology/01SynologyNet/"/>
       <url>/2022/02/23/Synology/01SynologyNet/</url>
@@ -13,7 +40,7 @@
       
       <categories>
           
-          <category> synology </category>
+          <category> Synology </category>
           
       </categories>
       
@@ -76,9 +103,9 @@
       
         <tags>
             
-            <tag> solution </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> solution </tag>
             
             <tag> cdn </tag>
             
@@ -105,9 +132,9 @@
       
         <tags>
             
-            <tag> solution </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> solution </tag>
             
             <tag> cdn </tag>
             
@@ -134,9 +161,9 @@
       
         <tags>
             
-            <tag> solution </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> solution </tag>
             
             <tag> 图床 </tag>
             
@@ -495,9 +522,9 @@
       
         <tags>
             
-            <tag> solution </tag>
-            
             <tag> vscode </tag>
+            
+            <tag> solution </tag>
             
         </tags>
       
