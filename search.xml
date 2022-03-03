@@ -8,7 +8,7 @@
       <link href="/2022/03/03/Unity3D/01Unity/"/>
       <url>/2022/03/03/Unity3D/01Unity/</url>
       
-        <content type="html"><![CDATA[<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><table><thead><tr><th align="left">排序方法</th><th align="left">平均情况</th><th align="left">最好情况</th><th align="left">最坏情况</th><th align="left">辅助空间</th><th align="left">稳定性</th></tr></thead><tbody><tr><td align="left">冒泡排序</td><td align="left">O(n²)</td><td align="left">O(nlogn)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">简单选择</td><td align="left">O(n²)</td><td align="left">O(n²)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">直接插入</td><td align="left">O(n²)</td><td align="left">O(n)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">希尔排序</td><td align="left">O(nlogn)~O(n²)</td><td align="left">O(n^1.3)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">不稳定</td></tr><tr><td align="left">堆排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(1)</td><td align="left">不稳定</td></tr><tr><td align="left">归并排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(n)</td><td align="left">不稳定</td></tr><tr><td align="left">快速排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(n²)</td><td align="left">O(nlogn)~O(n)</td><td align="left">不稳定</td></tr></tbody></table><p>排序：冒泡排序、快速排序<br>字符串：KMP<br>二叉树：遍历（深度、广度）<br>递归：目录遍历，子物体查找，多维数组遍历<br>遍历（深度，广度）<br>数学题：斐波那契数列，杨辉三角，九皇后算法</p><h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>*MVC三层开发思想<br>MVVM：设计思想<br>*单例模式<br>工厂模式<br>观察者模式</p><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>  类和对象</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>构造方法<br>虚方法和重写<br>重载<br>Lambda表达式<br>静态<br>保护类型（public、protected、private）</p><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><h2 id="抽象类和接口"><a href="#抽象类和接口" class="headerlink" title="抽象类和接口"></a>抽象类和接口</h2><p> 抽象方法</p><h2 id="继承和复合"><a href="#继承和复合" class="headerlink" title="继承和复合"></a>继承和复合</h2><p>继承：is a<br>复合：has a </p><h2 id="宏指令（比C-弱）"><a href="#宏指令（比C-弱）" class="headerlink" title="宏指令（比C++弱）"></a>宏指令（比C++弱）</h2><h1 id="数据容器-数据组织结构，序列化，反序列"><a href="#数据容器-数据组织结构，序列化，反序列" class="headerlink" title="数据容器(数据组织结构，序列化，反序列)"></a>数据容器(数据组织结构，序列化，反序列)</h1><p>XML(简化成JSON)<br>JSON(简化成ProtoBuffer)<br>ProtoBuffer</p><h1 id="服务器通信"><a href="#服务器通信" class="headerlink" title="服务器通信"></a>服务器通信</h1><h2 id="OSI七层模型-TCP-x2F-IP参考模型"><a href="#OSI七层模型-TCP-x2F-IP参考模型" class="headerlink" title="OSI七层模型,TCP&#x2F;IP参考模型"></a>OSI七层模型,TCP&#x2F;IP参考模型</h2><p>应用层（HTTP）<br>表示层<br>会话层<br>传输层（TCP,UDP）<br>网络层(IP)<br>数据链路层<br>物理层</p><h2 id="HTTP通信"><a href="#HTTP通信" class="headerlink" title="HTTP通信"></a>HTTP通信</h2><p>连接一次后断开<br>Request- Request<br>基于TCP<br>URL地址（协议[http&#x2F;https]（不加密&#x2F;加密），主机，端口，路径，文件，传参）<br>URL参数 参数1&#x3D;参数1值&amp;参数2&#x3D;参数2值<br>状态号：200成功，302重定向,403找到了禁止访问，404找不到，500服务器内部错误（java把状态号屏蔽也出现这个）<br>头部信息：编码格式，cookie<br>Unity内部封装的HTTP请求类</p><h2 id="TCP长连接通信"><a href="#TCP长连接通信" class="headerlink" title="TCP长连接通信"></a>TCP长连接通信</h2><p>TCP连接（三次握手）与断开（四次挥手）<br>套接字<br>TCP连接与断开数发送和接收<br>端口绑定（服务器）</p><h2 id="数据包处理"><a href="#数据包处理" class="headerlink" title="数据包处理"></a>数据包处理</h2><p>打包，解包<br>分包,粘包<br>心跳包</p><h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>消息号-回调函数<br>发送消息<br>接受消息</p><h2 id="UDP通信"><a href="#UDP通信" class="headerlink" title="UDP通信"></a>UDP通信</h2><p>套接字<br>帧序<br>服务器帧定时器<br>数据同步到unity系统<br>防作弊</p><h1 id="Unity"><a href="#Unity" class="headerlink" title="Unity"></a>Unity</h1><p>编辑器，Editor工具开发<br>基础API（GameObject，Transform，物理引擎）<br>场景搭建（地形编辑，NavMesh）<br>相机系统（参数设定，多相机叠加，渲染层，排序层）<br>声音系统（音频编辑系统，音频播放系统[2D,3D]）<br>动画系统（Animator状态机，Animation动画片段，Avatar,融合树，IK，事件插入）<br>资源系统（IO操作（C#），Resources（打在包里）,AssetBundle）<br>UI系统（UGUI（基础组件，复合组件），DOTween）<br>Eventsystem（2D给UI,3D给相机）<br>3D数学（向量和点，坐标系转换[世界坐标系和本地坐标系]，欧拉角和四元数）</p><h1 id="优化技巧"><a href="#优化技巧" class="headerlink" title="优化技巧"></a>优化技巧</h1><h2 id="降低DrawCall"><a href="#降低DrawCall" class="headerlink" title="降低DrawCall"></a>降低DrawCall</h2><p>  图集<br>  少写pass通道<br>  GPUInstancer</p><h2 id="减少Update生命周期函数"><a href="#减少Update生命周期函数" class="headerlink" title="减少Update生命周期函数"></a>减少Update生命周期函数</h2><p>  计时器<br>多个脚本，注册给一个脚本，在一个脚本中调用其他脚本的Update</p><h2 id="对象池"><a href="#对象池" class="headerlink" title="对象池"></a>对象池</h2><p>创建（单帧，跨帧）<br>回收</p><h2 id="il2cpp的代码优化（C-转C-）"><a href="#il2cpp的代码优化（C-转C-）" class="headerlink" title="il2cpp的代码优化（C#转C++）"></a>il2cpp的代码优化（C#转C++）</h2><p>避免装箱拆箱（不用object）<br>避免使用foreach（遍历有垃圾碎片）尤其注意Update中编写foreach<br>减少在上线项目中，使用Debug（性能开销大）</p><h2 id="静态配表"><a href="#静态配表" class="headerlink" title="静态配表"></a>静态配表</h2><p>将不常变的数据，生成为数据（JSON，XML，ProtoBuffer）文件，可以减少服务器传递的数据量</p><h2 id="减少CPU消耗"><a href="#减少CPU消耗" class="headerlink" title="减少CPU消耗"></a>减少CPU消耗</h2><p>动画裁剪(动画在相机视椎体外不运行）</p><h2 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h2><p>（gpu参考博客 课程笔记完成）<br>飞出屏幕，不需要再次渲染的对象，记得销毁<br>（参考博客 AB包）<br>加载带有资源文件（精灵）的资源时，内存会上升，当带有资源的GameObject被销毁时，资源所占用的内存，不会被释放(懒释放-为了快)，Resources.UnloadUnusedAssets()<br>对象存储在静态变量上，变量不会被垃圾回收机制影响，当不再使用时，需要赋值为null<br>继承自IDispose接口的对象，当不再使用时，需要调用dispose()函数<br>WWW( )<br>Stream处理 （流处理）<br>Using（）<br>{<br>&#x2F;&#x2F;自动执行dispose（）函数   文件操作<br>}</p><h3 id="Using用法例如"><a href="#Using用法例如" class="headerlink" title="Using用法例如"></a>Using用法例如</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">StreamReader sr = <span class="keyword">new</span> StreamReader(“文件路径”)；</span><br><span class="line"><span class="built_in">string</span> content = sr.ReadToEnd();</span><br><span class="line">sr.close();</span><br><span class="line">sr.Dispose();</span><br><span class="line"><span class="comment">//代码优化</span></span><br><span class="line"><span class="keyword">using</span>(streamReader sr = <span class="keyword">new</span> StreamReader(<span class="string">&quot;文件路径&quot;</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">string</span> content = sr.ReadToEnd();</span><br><span class="line">sr.close();</span><br><span class="line"><span class="comment">//隐式调用sr的Dispose方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="异步实现"><a href="#异步实现" class="headerlink" title="异步实现"></a>异步实现</h2><p>线程在Unity中是存在，注意不能在线程中操作Unity的对象树 （gameobject操作）</p><p>异步加载场景（代码是协同，底层是线程）<br>异步加载Resources（代码是协同,底层是线程)<br>异步加载AB包（代码是协同，底层是线程)<br>异步加载AB包中的资源(代码是协同，底层是线程）</p><p>HTTP请求（代码是协同，底层是线程)<br>TCP请求(代码是线程)</p><h2 id="延迟实现"><a href="#延迟实现" class="headerlink" title="延迟实现"></a>延迟实现</h2><p>利用协同实现（yield return null)，可以实现每一帧做一些事情</p><p>列表页元素过多时，如果在一帧中加载所有cell，则会卡顿，可以使用逐帧加载多个cell的方式,或通过滚动条的OnValueChange回调函数,执行多次加载</p><h1 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h1><h2 id="Lua的基础语法-表和面向对象"><a href="#Lua的基础语法-表和面向对象" class="headerlink" title="Lua的基础语法(表和面向对象)"></a>Lua的基础语法(表和面向对象)</h2><p>.tolua独立开发与xlua腾讯<br>Lua和JavaScript很像（一切皆对象）</p><h2 id="C-与xLua的互调"><a href="#C-与xLua的互调" class="headerlink" title="C#与xLua的互调"></a>C#与xLua的互调</h2><p>C#调xLua  为了执行一些生命周期函数<br>xLua调C#  为了实现一些API</p><h2 id="热更新"><a href="#热更新" class="headerlink" title="热更新"></a>热更新</h2><h1 id="Shader"><a href="#Shader" class="headerlink" title="Shader"></a>Shader</h1><p>矩阵运算，齐次矩阵，坐标系转换<br>渲染流水线<br>Cg语言<br>顶点、片元着色器<br>属性控制与数据传递<br>光照（兰伯特定律，高光）</p><h2 id="着色方式"><a href="#着色方式" class="headerlink" title="着色方式"></a>着色方式</h2><h3 id="Phong着色，"><a href="#Phong着色，" class="headerlink" title="Phong着色，"></a>Phong着色，</h3><h3 id="高洛德着色"><a href="#高洛德着色" class="headerlink" title="高洛德着色"></a>高洛德着色</h3><h2 id="纹理渲染"><a href="#纹理渲染" class="headerlink" title="纹理渲染"></a>纹理渲染</h2><p>主纹理，光照纹理</p><h2 id="渲染指令"><a href="#渲染指令" class="headerlink" title="渲染指令"></a>渲染指令</h2><p>多pass通道，<br>渲染队列，深度测试，深度缓冲，颜色缓冲<br>反向裁剪<br>透明度测试<br>片元丢弃</p><h1 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h1><p>SVN:基于版本控制的集中式管理系统<br>学习：<a href="https://www.runoob.com/svn/svn-tutorial.html">https://www.runoob.com/svn/svn-tutorial.html</a><br>软件：<br>Git:基于分支实现的版本控制软件<br>学习：<a href="http://www.liaoxuefeng.com/wiki/">www.liaoxuefeng.com/wiki/</a><br>软件：<a href="http://www.sourcetreeapp.com/">www.sourcetreeapp.com</a></p><h1 id="VR"><a href="#VR" class="headerlink" title="VR"></a>VR</h1><p>硬件搭建<br>Unity中整合SteamVR（OpenVR）<br>开发</p><h2 id="动作设置"><a href="#动作设置" class="headerlink" title="动作设置"></a>动作设置</h2><p>设置VR场景<br>接入设备(两个手柄，眼镜)</p><h2 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h2><p>人物瞬移<br>道具拾取<br>UI交互</p><h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>物理引擎<br>场景搭建<br>Shader</p><h1 id="AR"><a href="#AR" class="headerlink" title="AR"></a>AR</h1><p>SDK添加<br>图片识别<br>平面感知</p><h2 id="打包和SDK接入"><a href="#打包和SDK接入" class="headerlink" title="打包和SDK接入"></a>打包和SDK接入</h2><p>NDK（Unity c#-c++） SDK(android)  JDK(java)</p><h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><p>环境配置<br>参数设定<br>真机测试(LogViewer)<br>ADB观察打印（主要是安卓 ios 直接xcode）</p><h2 id="SDK接入-c-和原生语言）"><a href="#SDK接入-c-和原生语言）" class="headerlink" title="SDK接入(c#和原生语言）"></a>SDK接入(c#和原生语言）</h2><p>配置AS<br>根据文档，修改代码,生成AAR包<br>将aar包放入Plugins目录<br>C#调用unity写好的桥梁代码，进而调用java</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><table><thead><tr><th align="left">排序方法</th><th align="left">平均情况</th><th align="left">最好情况</th><th align="left">最坏情况</th><th align="left">辅助空间</th><th align="left">稳定性</th></tr></thead><tbody><tr><td align="left">冒泡排序</td><td align="left">O(n²)</td><td align="left">O(nlogn)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">简单选择</td><td align="left">O(n²)</td><td align="left">O(n²)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">直接插入</td><td align="left">O(n²)</td><td align="left">O(n)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">稳定</td></tr><tr><td align="left">希尔排序</td><td align="left">O(nlogn)~O(n²)</td><td align="left">O(n^1.3)</td><td align="left">O(n²)</td><td align="left">O(1)</td><td align="left">不稳定</td></tr><tr><td align="left">堆排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(1)</td><td align="left">不稳定</td></tr><tr><td align="left">归并排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(n)</td><td align="left">不稳定</td></tr><tr><td align="left">快速排序</td><td align="left">O(nlogn)</td><td align="left">O(nlogn)</td><td align="left">O(n²)</td><td align="left">O(nlogn)~O(n)</td><td align="left">不稳定</td></tr></tbody></table><p>排序：冒泡排序、快速排序<br>字符串：KMP<br>二叉树：遍历（深度、广度）<br>递归：目录遍历，子物体查找，多维数组遍历<br>遍历（深度，广度）<br>数学题：斐波那契数列，杨辉三角，九皇后算法</p><h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>*MVC三层开发思想<br>MVVM：设计思想<br>*单例模式<br>工厂模式<br>观察者模式</p><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>  类和对象</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>构造方法<br>虚方法和重写<br>重载<br>Lambda表达式<br>静态<br>保护类型（public、protected、private）</p><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><h2 id="抽象类和接口"><a href="#抽象类和接口" class="headerlink" title="抽象类和接口"></a>抽象类和接口</h2><p> 抽象方法</p><h2 id="继承和复合"><a href="#继承和复合" class="headerlink" title="继承和复合"></a>继承和复合</h2><p>继承：is a<br>复合：has a </p><h2 id="宏指令（比C-弱）"><a href="#宏指令（比C-弱）" class="headerlink" title="宏指令（比C++弱）"></a>宏指令（比C++弱）</h2><h1 id="数据容器-数据组织结构，序列化，反序列"><a href="#数据容器-数据组织结构，序列化，反序列" class="headerlink" title="数据容器(数据组织结构，序列化，反序列)"></a>数据容器(数据组织结构，序列化，反序列)</h1><p>XML(简化成JSON)<br>JSON(简化成ProtoBuffer)<br>ProtoBuffer</p><h1 id="服务器通信"><a href="#服务器通信" class="headerlink" title="服务器通信"></a>服务器通信</h1><h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p>应用层（HTTP）<br>表示层<br>会话层<br>传输层（TCP,UDP）<br>网络层(IP)<br>数据链路层<br>物理层</p><h2 id="TCP-x2F-IP五层模型的协议"><a href="#TCP-x2F-IP五层模型的协议" class="headerlink" title="TCP&#x2F;IP五层模型的协议"></a>TCP&#x2F;IP五层模型的协议</h2><p>应用层（HTTP）<br>传输层（TCP,UDP）<br>网络层(IP)<br>数据链路层<br>物理层</p><h2 id="HTTP通信"><a href="#HTTP通信" class="headerlink" title="HTTP通信"></a>HTTP通信</h2><p>连接一次后断开<br>Request- Request<br>基于TCP<br>URL地址（协议[http&#x2F;https]（不加密&#x2F;加密），主机，端口，路径，文件，传参）<br>URL参数 参数1&#x3D;参数1值&amp;参数2&#x3D;参数2值<br>状态号：200成功，302重定向,403找到了禁止访问，404找不到，500服务器内部错误（java把状态号屏蔽也出现这个）<br>头部信息：编码格式，cookie<br>Unity内部封装的HTTP请求类</p><h2 id="TCP长连接通信"><a href="#TCP长连接通信" class="headerlink" title="TCP长连接通信"></a>TCP长连接通信</h2><p>TCP连接（三次握手）与断开（四次挥手）<br>套接字<br>TCP连接与断开数发送和接收<br>端口绑定（服务器）</p><h2 id="数据包处理"><a href="#数据包处理" class="headerlink" title="数据包处理"></a>数据包处理</h2><p>打包，解包<br>分包,粘包<br>心跳包</p><h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>消息号-回调函数<br>发送消息<br>接受消息</p><h2 id="UDP通信"><a href="#UDP通信" class="headerlink" title="UDP通信"></a>UDP通信</h2><p>套接字<br>帧序<br>服务器帧定时器<br>数据同步到unity系统<br>防作弊</p><h1 id="Unity"><a href="#Unity" class="headerlink" title="Unity"></a>Unity</h1><p>编辑器，Editor工具开发<br>基础API（GameObject，Transform，物理引擎）<br>场景搭建（地形编辑，NavMesh）<br>相机系统（参数设定，多相机叠加，渲染层，排序层）<br>声音系统（音频编辑系统，音频播放系统[2D,3D]）<br>动画系统（Animator状态机，Animation动画片段，Avatar,融合树，IK，事件插入）<br>资源系统（IO操作（C#），Resources（打在包里）,AssetBundle）<br>UI系统（UGUI（基础组件，复合组件），DOTween）<br>Eventsystem（2D给UI,3D给相机）<br>3D数学（向量和点，坐标系转换[世界坐标系和本地坐标系]，欧拉角和四元数）</p><h1 id="优化技巧"><a href="#优化技巧" class="headerlink" title="优化技巧"></a>优化技巧</h1><h2 id="降低DrawCall"><a href="#降低DrawCall" class="headerlink" title="降低DrawCall"></a>降低DrawCall</h2><p>  图集<br>  少写pass通道<br>  GPUInstancer</p><h2 id="减少Update生命周期函数"><a href="#减少Update生命周期函数" class="headerlink" title="减少Update生命周期函数"></a>减少Update生命周期函数</h2><p>  计时器<br>多个脚本，注册给一个脚本，在一个脚本中调用其他脚本的Update</p><h2 id="对象池"><a href="#对象池" class="headerlink" title="对象池"></a>对象池</h2><p>创建（单帧，跨帧）<br>回收</p><h2 id="il2cpp的代码优化（C-转C-）"><a href="#il2cpp的代码优化（C-转C-）" class="headerlink" title="il2cpp的代码优化（C#转C++）"></a>il2cpp的代码优化（C#转C++）</h2><p>避免装箱拆箱（不用object）<br>避免使用foreach（遍历有垃圾碎片）尤其注意Update中编写foreach<br>减少在上线项目中，使用Debug（性能开销大）</p><h2 id="静态配表"><a href="#静态配表" class="headerlink" title="静态配表"></a>静态配表</h2><p>将不常变的数据，生成为数据（JSON，XML，ProtoBuffer）文件，可以减少服务器传递的数据量</p><h2 id="减少CPU消耗"><a href="#减少CPU消耗" class="headerlink" title="减少CPU消耗"></a>减少CPU消耗</h2><p>动画裁剪(动画在相机视椎体外不运行）</p><h2 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h2><p>（gpu参考博客 课程笔记完成）<br>飞出屏幕，不需要再次渲染的对象，记得销毁<br>（参考博客 AB包）<br>加载带有资源文件（精灵）的资源时，内存会上升，当带有资源的GameObject被销毁时，资源所占用的内存，不会被释放(懒释放-为了快)，Resources.UnloadUnusedAssets()<br>对象存储在静态变量上，变量不会被垃圾回收机制影响，当不再使用时，需要赋值为null<br>继承自IDispose接口的对象，当不再使用时，需要调用dispose()函数<br>WWW( )<br>Stream处理 （流处理）<br>Using（）<br>{<br>&#x2F;&#x2F;自动执行dispose（）函数   文件操作<br>}</p><h3 id="Using用法例如"><a href="#Using用法例如" class="headerlink" title="Using用法例如"></a>Using用法例如</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">StreamReader sr = <span class="keyword">new</span> StreamReader(“文件路径”)；</span><br><span class="line"><span class="built_in">string</span> content = sr.ReadToEnd();</span><br><span class="line">sr.close();</span><br><span class="line">sr.Dispose();</span><br><span class="line"><span class="comment">//代码优化</span></span><br><span class="line"><span class="keyword">using</span>(streamReader sr = <span class="keyword">new</span> StreamReader(<span class="string">&quot;文件路径&quot;</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">string</span> content = sr.ReadToEnd();</span><br><span class="line">sr.close();</span><br><span class="line"><span class="comment">//隐式调用sr的Dispose方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="异步实现"><a href="#异步实现" class="headerlink" title="异步实现"></a>异步实现</h2><p>线程在Unity中是存在，注意不能在线程中操作Unity的对象树 （gameobject操作）</p><p>异步加载场景（代码是协同，底层是线程）<br>异步加载Resources（代码是协同,底层是线程)<br>异步加载AB包（代码是协同，底层是线程)<br>异步加载AB包中的资源(代码是协同，底层是线程）</p><p>HTTP请求（代码是协同，底层是线程)<br>TCP请求(代码是线程)</p><h2 id="延迟实现"><a href="#延迟实现" class="headerlink" title="延迟实现"></a>延迟实现</h2><p>利用协同实现（yield return null)，可以实现每一帧做一些事情</p><p>列表页元素过多时，如果在一帧中加载所有cell，则会卡顿，可以使用逐帧加载多个cell的方式,或通过滚动条的OnValueChange回调函数,执行多次加载</p><h1 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h1><h2 id="Lua的基础语法-表和面向对象"><a href="#Lua的基础语法-表和面向对象" class="headerlink" title="Lua的基础语法(表和面向对象)"></a>Lua的基础语法(表和面向对象)</h2><p>.tolua独立开发与xlua腾讯<br>Lua和JavaScript很像（一切皆对象）</p><h2 id="C-与xLua的互调"><a href="#C-与xLua的互调" class="headerlink" title="C#与xLua的互调"></a>C#与xLua的互调</h2><p>C#调xLua  为了执行一些生命周期函数<br>xLua调C#  为了实现一些API</p><h2 id="热更新"><a href="#热更新" class="headerlink" title="热更新"></a>热更新</h2><h1 id="Shader"><a href="#Shader" class="headerlink" title="Shader"></a>Shader</h1><p>矩阵运算，齐次矩阵，坐标系转换<br>渲染流水线<br>Cg语言<br>顶点、片元着色器<br>属性控制与数据传递<br>光照（兰伯特定律，高光）</p><h2 id="着色方式"><a href="#着色方式" class="headerlink" title="着色方式"></a>着色方式</h2><h3 id="Phong着色，"><a href="#Phong着色，" class="headerlink" title="Phong着色，"></a>Phong着色，</h3><h3 id="高洛德着色"><a href="#高洛德着色" class="headerlink" title="高洛德着色"></a>高洛德着色</h3><h2 id="纹理渲染"><a href="#纹理渲染" class="headerlink" title="纹理渲染"></a>纹理渲染</h2><p>主纹理，光照纹理</p><h2 id="渲染指令"><a href="#渲染指令" class="headerlink" title="渲染指令"></a>渲染指令</h2><p>多pass通道，<br>渲染队列，深度测试，深度缓冲，颜色缓冲<br>反向裁剪<br>透明度测试<br>片元丢弃</p><h1 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h1><p>SVN:基于版本控制的集中式管理系统<br>学习：<a href="https://www.runoob.com/svn/svn-tutorial.html">https://www.runoob.com/svn/svn-tutorial.html</a><br>软件：<br>Git:基于分支实现的版本控制软件<br>学习：<a href="http://www.liaoxuefeng.com/wiki/">www.liaoxuefeng.com/wiki/</a><br>软件：<a href="http://www.sourcetreeapp.com/">www.sourcetreeapp.com</a></p><h1 id="VR"><a href="#VR" class="headerlink" title="VR"></a>VR</h1><p>硬件搭建<br>Unity中整合SteamVR（OpenVR）<br>开发</p><h2 id="动作设置"><a href="#动作设置" class="headerlink" title="动作设置"></a>动作设置</h2><p>设置VR场景<br>接入设备(两个手柄，眼镜)</p><h2 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h2><p>人物瞬移<br>道具拾取<br>UI交互</p><h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>物理引擎<br>场景搭建<br>Shader</p><h1 id="AR"><a href="#AR" class="headerlink" title="AR"></a>AR</h1><p>SDK添加<br>图片识别<br>平面感知</p><h2 id="打包和SDK接入"><a href="#打包和SDK接入" class="headerlink" title="打包和SDK接入"></a>打包和SDK接入</h2><p>NDK（Unity c#-c++） SDK(android)  JDK(java)</p><h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><p>环境配置<br>参数设定<br>真机测试(LogViewer)<br>ADB观察打印（主要是安卓 ios 直接xcode）</p><h2 id="SDK接入-c-和原生语言）"><a href="#SDK接入-c-和原生语言）" class="headerlink" title="SDK接入(c#和原生语言）"></a>SDK接入(c#和原生语言）</h2><p>配置AS<br>根据文档，修改代码,生成AAR包<br>将aar包放入Plugins目录<br>C#调用unity写好的桥梁代码，进而调用java</p>]]></content>
       
       
       <categories>
@@ -55,9 +55,9 @@
             
             <tag> solution </tag>
             
-            <tag> gitee </tag>
-            
             <tag> github </tag>
+            
+            <tag> gitee </tag>
             
         </tags>
       
@@ -82,9 +82,9 @@
       
         <tags>
             
-            <tag> synology </tag>
-            
             <tag> vmware </tag>
+            
+            <tag> synology </tag>
             
         </tags>
       
@@ -109,9 +109,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> gitee </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -136,9 +136,9 @@
       
         <tags>
             
-            <tag> esxi </tag>
-            
             <tag> synology </tag>
+            
+            <tag> esxi </tag>
             
         </tags>
       
@@ -192,9 +192,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> solution </tag>
+            
+            <tag> hexo </tag>
             
             <tag> cdn </tag>
             
@@ -221,9 +221,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> solution </tag>
+            
+            <tag> hexo </tag>
             
             <tag> cdn </tag>
             
@@ -250,11 +250,11 @@
       
         <tags>
             
+            <tag> solution </tag>
+            
             <tag> hexo </tag>
             
             <tag> 图床 </tag>
-            
-            <tag> solution </tag>
             
         </tags>
       
@@ -470,9 +470,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -497,9 +497,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -524,11 +524,11 @@
       
         <tags>
             
+            <tag> git </tag>
+            
             <tag> hexo </tag>
             
             <tag> npm </tag>
-            
-            <tag> git </tag>
             
             <tag> note.js </tag>
             
@@ -614,6 +614,33 @@
             <tag> solution </tag>
             
             <tag> vscode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何下载网页中嵌入的PPT</title>
+      <link href="/2019/03/05/Office/01Office/"/>
+      <url>/2019/03/05/Office/01Office/</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何下载网页中嵌入的PPT"><a href="#如何下载网页中嵌入的PPT" class="headerlink" title="如何下载网页中嵌入的PPT"></a>如何下载网页中嵌入的PPT</h1><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><ol><li>复制当前网页地址。</li><li>打开powerpoint 选择“文件”“打开”在文件名的地方粘贴刚才复制的地址，然后就会出现一个连接到服务器的图案，耐心等待。</li><li>如果防火墙弹出提示请选择允许访问网络。等全部下载完之后选择 “文件”“另存为”ppt格式即可</li></ol><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><ol><li>也可以先将此网页中打开的有PPT的地址收藏到IE的收藏夹中</li><li>命名为“XXXppt，记住其收藏夹中的位置(这里要说明:你至少应该知道你的收藏夹的位置)，</li><li>然后运行PPT，点击文件&#x2F;打开，选择收藏夹，找到“XXXppt”，打开,然后另存为PPT。</li><li>就是把当前网页保存收藏，一定要记住保存后的名字和位置。然后运行powerpoint，打开文件，选择你刚才收藏的网页，这时候就自动下载到硬盘啦！</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Office </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> solution </tag>
+            
+            <tag> office </tag>
             
         </tags>
       
