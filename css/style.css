@@ -60,11 +60,11 @@
     
  /* 页脚footer */
 
- #footer {
-  background:rgba(255,255,255,.0);
+#footer {
+  background:rgba(255, 255, 255, 0);
 }
 
-#footer-wrap{
+#footer-other {
   position:relative;
   padding:40px 20px;
   color: #4c4948 !important; 
@@ -72,10 +72,21 @@
   text-align:center
 }
 
+#footer-wrap {
+  position:relative;
+  padding:40px 20px;
+  color: #4c4948 !important; 
+  font-weight: bolder;
+  text-align:center
+}
+
+
+
 /* 思维导图画布 */
 blockquote.pullquote {
   position: relative;
   /* max-width: 45%; */
   max-width: 100%;
   font-size: 100%;
-}<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+}
+

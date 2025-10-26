@@ -1,24 +1,113 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Winward King's Blog - LWQ</title><meta name="keywords" content="云梦天空猫,Winward King,Blog,博客"><meta name="author" content="Winward King"><meta name="copyright" content="Winward King"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="欢迎来到我的博客小站">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Winward King's Blog - LWQ</title><meta name="author" content="Winward King"><meta name="copyright" content="Winward King"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="欢迎来到我的博客小站">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Winward King&#39;s Blog">
-<meta property="og:url" content="https://www.timelines.ml/page/9/index.html">
+<meta property="og:url" content="https://winward-king.github.io/page/9/index.html">
 <meta property="og:site_name" content="Winward King&#39;s Blog">
 <meta property="og:description" content="欢迎来到我的博客小站">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.timelines.ml/img/%E5%89%91%E5%AE%A2300px.png">
+<meta property="og:image" content="https://winward-king.github.io/img/%E5%89%91%E5%AE%A2300px.png">
 <meta property="article:author" content="Winward King">
 <meta property="article:tag" content="云梦天空猫,Winward King,Blog,博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.timelines.ml/img/%E5%89%91%E5%AE%A2300px.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.timelines.ml/page/9/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://winward-king.github.io/img/%E5%89%91%E5%AE%A2300px.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://winward-king.github.io/page/9/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/img/pwa/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":true,"highlightMacStyle":true},
   copy: {
     success: '复制成功',
-    error: '复制错误',
+    error: '复制失败',
     noSupport: '浏览器不支持'
   },
   relativeDate: {
@@ -26,7 +115,7 @@
     post: false
   },
   runtime: '',
-  date_suffix: {
+  dateSuffix: {
     just: '刚刚',
     min: '分钟前',
     hour: '小时前',
@@ -36,111 +125,24 @@
   copyright: {"limitCount":80,"languages":{"author":"作者: Winward King","link":"链接: ","source":"来源: Winward King's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
   lightbox: 'fancybox',
   Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
   },
   isPhotoFigcaption: true,
-  islazyload: true,
-  isAnchor: true
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'Winward King\'s Blog',
-  isPost: false,
-  isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-10-12 19:05:39'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start -->
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start -->
     <style>
       #background-effect {
         position: fixed !important;
@@ -151,414 +153,230 @@
         height: 100%
       }
     </style>
-  <link rel="stylesheet" href="/js/footer_beautify/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/./img/%E5%89%91%E5%AE%A2300px.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">154</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">65</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fa-fw fas fa-book"></i><span> 阅读过的书</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa-fw fas fa-video"></i><span> 看过的影视</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fa-fw fas fa-gamepad"></i><span> 玩过的游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 聚合</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://nastab.timelines.ml/"><i class="fa-fw fa-solid fa-window-maximize"></i><span> 导航页</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://dsm.timelines.ml:5001/"><i class="fa-fw fa-solid fa-computer"></i><span> 群晖</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://dsm.timelines.ml:8096/"><i class="fa-fw fas fa-video"></i><span> 影音库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/28967580/"><i class="fa-fw fa-brands fa-bilibili"></i><span> 我的B站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/images/Wlop/164521452930013.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Winward King's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fa-fw fas fa-book"></i><span> 阅读过的书</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa-fw fas fa-video"></i><span> 看过的影视</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fa-fw fas fa-gamepad"></i><span> 玩过的游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 聚合</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://nastab.timelines.ml/"><i class="fa-fw fa-solid fa-window-maximize"></i><span> 导航页</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://dsm.timelines.ml:5001/"><i class="fa-fw fa-solid fa-computer"></i><span> 群晖</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://dsm.timelines.ml:8096/"><i class="fa-fw fas fa-video"></i><span> 影音库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/28967580/"><i class="fa-fw fa-brands fa-bilibili"></i><span> 我的B站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Winward King's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2049206212&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://www.instagram.com/accounts/login/?next=/wenqiang39/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a><a class="social-icon" href="mailto:ybqcdxs@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/5807345081/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" title="微博"><i class="fa-brands fa-weibo"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/04/Unity3D/04Unity_Lifecycle/" title="Unity脚本的生命周期"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity脚本的生命周期"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/04/Unity3D/04Unity_Lifecycle/" title="Unity脚本的生命周期">Unity脚本的生命周期</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T16:20:00.000Z" title="发表于 2018-04-04 00:20:00">2018-04-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">生命周期中常用方法
-特性序列化字段：在编辑器中显示私有变量12[SerializeField]    private int a = 1;
-
-在编译器中隐藏字段12[HideInInspector]    public int b = 2; 
-
-只能在范围内设置值12[Range(0,15)]    public int c = 3;
-
-
-一、初始化相关的方法Awake()1private  void  Awake()  &#123;......&#125; 
-
-
-脚本被加载到场景中时自动调用
-是整个生命周期中最先执行的方法
-当脚本实例被加载时会自动调用这个方法
-整个生命周期中只执行一次
-
-该方法主要用于在游戏开始之前初始化对象或游戏状态，如：使用 GameObject.FindWithTag()查询游戏对象。
-OnEnable()1private  void  OnEnable()  &#123;......&#125; 
-
-当对象变为可用或激活状态时调用，判断对象或脚本是否可用
-执行完Awake()方法后，如果当前脚本可用或可激活，按正常执行顺序则会执行OnEnable()方法。
- ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/03/Unity3D/03Unity_FindObj/" title="Unity查找物体的6种方法详解"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity查找物体的6种方法详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_FindObj/" title="Unity查找物体的6种方法详解">Unity查找物体的6种方法详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T15:20:00.000Z" title="发表于 2018-04-03 23:20:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">前言
-无论是哪种方法,为了性能的考虑,请不要将获取物体的代码写在Update里
-
-请注意GameObject和gameObject的区别
-
-请注意Transform和transform的区别
-
-
-查找物体方法(速查表)
-GameObject(Unity的所有物体的基类,针对全局,方法是静态方法,所以可以直接用)注意:非gameObject,注意大小写,gameObject指的是该物体,gameObject无这些方法
-
-transform(是本物体的transform的组件,所以查找都是针对本物体的)注意:非Transform,注意大小写,Transform指的是Transform类型,Transform无这些方法
-
-P.S. transform效率比GameObject高,强烈建议使用transform
-
-
-
-
-
-
-查找物体的6种方法
-方法
-优点
-缺点
-
-
-
-GameObject.Find(物体名字)
-递归遍历全局物体,直到找到第一个为Capsule的物体
-全局搜索
-1. 无法查找隐藏对象2.效率低下(相当于递归遍历查找)
-
-
-GameObject.Find(“GameObject&# ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/03/Unity3D/03Unity_GgTt/" title="Gameobject,gameObject,Transform,transform的区别和关联"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gameobject,gameObject,Transform,transform的区别和关联"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_GgTt/" title="Gameobject,gameObject,Transform,transform的区别和关联">Gameobject,gameObject,Transform,transform的区别和关联</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T14:55:00.000Z" title="发表于 2018-04-03 22:55:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Gameobject和gameobject
-Gameobject是一个类型，所有的游戏物件都是这个类型的对象。
-gameobject是一个对象， 就跟java里面的this一样， 指的是这个脚本所附着的游戏物件
-
-12345678public class ShowSliderValue : MonoBehaviour &#123;        private GameObject  obje; //定义GameObject类型的指针     void Start()&#123;         Text  lal =gameObject.GetComponent&lt;Text&gt; (); //通过gameObject获取到Text组件.         Debug.Log (&quot;Text&quot; + lal.text); //打印获取到组件的中的text的属性     &#125; &#125; 
-
-Text  lal =gameObject.GetComponent&lt;Text&gt; () 中不使用gameObject , 直接通过GetComponent& ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/03/Unity3D/03Unity_API/" title="Unity常用的基础 API"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity常用的基础 API"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_API/" title="Unity常用的基础 API">Unity常用的基础 API</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T14:20:00.000Z" title="发表于 2018-04-03 22:20:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity常用的基础 API
-在线手册
-Unity 脚本API 2020.02
-unity5圣典中文API手册.chm
-
-
-组件
-坐标系
-鼠标事件
-Time类
-Vector3
-Transform
-Gameobject 
-lnput类
-
-TransformTransform组件的成员变量
-
-
-组件名称
-组件作用
-
-
-
-position
-世界坐标中的位置
-
-
-localPosition
-父对象局部坐标系中的位置
-
-
-enlerAngles
-世界坐标系中以欧拉角表示的旋转
-
-
-localEulerAngles
-父对象局部坐标系中的欧拉角
-
-
-right
-对象在世界坐标系中的右方向
-
-
-up
-对象在世界坐标系中的上方向
-
-
-forward
-对象在世界坐标系中的前方向
-
-
-rotation
-世界坐标系中以以元数表示的旋转
-
-
-localRotation
-父对象局部坐标系中以四元数表示的旋转
-
-
-localScale
-父对象局部坐标系中的缩放比例
-
-
-parent
-父对象的Transform组件
-
-
-Transform组件的成员函数
-
-
-组件名称
-组件作用
-
-
-
-Translate
-按指定的方向和 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/02/Unity3D/02Unity_Usually/" title="Unity基础界面"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity基础界面"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/02/Unity3D/02Unity_Usually/" title="Unity基础界面">Unity基础界面</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-02T14:20:00.000Z" title="发表于 2018-04-02 22:20:00">2018-04-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity 版本号与许可证2017.1.0 、2017.1.1 、 2017.2.0 、2017.3.4 、 5.5.3  p4
-小版本号高出现bug可能性更小；一台电脑可以安装多个版本的unity，但是需要安装在不同路径；安装Unity时不能有中文路径；unity项目路径也不要有中文
-菜单栏与快捷键
-File (文件菜单)
-File 菜单主要用于打开和保存场景项目，同时也可以创建新场景。
-File 菜单功能及快捷键列表：
-
-
-
-
-命令
-描述
-快捷键
-
-
-
-New Scene（新建场景）
-创建一个新的场景
-Ctrl + N
-
-
-Open Scene（打开场景）
-打开一个已经创建的场景
-Ctrl + O
-
-
-Save Scene（保存场景）
-保存当前场景
-Ctrl + S
-
-
-Save Scene As（另存场景）
-将当前场景另存为一个新场景
-Ctrl + Shift + S
-
-
-New Project（新建项目）
-新建一个项目
-无
-
-
-Open Project（打开项目）
-打开一个已经创建的项目
-无
-
-
-Save Project（保存项目）
-保存当前项目
-无
-
-
-Build Setti ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/01/Unity3D/01Unity_Profile/" title="Unity简介"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity简介"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/01/Unity3D/01Unity_Profile/" title="Unity简介">Unity简介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-31T16:20:00.000Z" title="发表于 2018-04-01 00:20:00">2018-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity 简介由 Unity Technologies 公司开发的用于轻松创建游戏和三维互动内容的开发工具，是一个国际领先的专业游戏引擎。
-Unity 网站资源 (CN)
-
-
-资源名称
-网址
-
-
-
-Unity中国官网
-https://unity.cn/
-
-
-Unity开发者社区
-https://developer.unity.cn/
-
-
-Unity Learn Premium
-https://unity.com/cn/products/unity-learn
-
-
-Unity 网站资源 (World)
-
-
-资源名称
-网址
-
-
-
-Unity官网
-http://unity3d.com
-
-
-Unity论坛
-http://forum.china.unity3d.com/fourm.php
-
-
-Unity博客
-http://answers.unity3d.com/index.html
-
-
-Unity官方在线案例
-http://unity3d.com/gallery/demos/live-demos
-
-
-Unity官方项目源文件
-http://nity3d.com/gallery/demos/de ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/03/21/CSharp/40CSharp_Try/" title="C#笔记（40）if(){}try{}catch{}语句"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（40）if(){}try{}catch{}语句"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/21/CSharp/40CSharp_Try/" title="C#笔记（40）if(){}try{}catch{}语句">C#笔记（40）if(){}try{}catch{}语句</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-21T02:00:00.000Z" title="发表于 2018-03-21 10:00:00">2018-03-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">try…catch 语句用来测试代码中的错误，try 部分包含需要运行的代码，而 catch 部分包含错误发生时运行的代码。
-用法12345try &#123;    //可能会导致错误的代码&#125; catch (error) &#123;    //在错误发生时怎么处理&#125;
-
-实例12345try &#123;    window.someNonexistentFunction(); //调用不存在的函数&#125; catch (error) &#123;    alert(&#x27;An error happened!&#x27;);&#125;
-finally子句虽然在try-catch语句中是可选的，但finally子句一经使用，其代码无论如何都会执行。换句话说，try语句块中的代码全部正常执行，finally子句会执行；如果因为出错而执行了catch语句块，finally子句照样还会执行。只要代码中包含finally子句，则无论try或catch语句块中包含什么样的代码——甚至return语句，都不会阻止finally子句的执行。来看下面这个函数：
-1234 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/03/21/CSharp/41CSharp_Lambda/" title="C#笔记（41）Lambda表达式"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（41）Lambda表达式"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/21/CSharp/41CSharp_Lambda/" title="C#笔记（41）Lambda表达式">C#笔记（41）Lambda表达式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-21T02:00:00.000Z" title="发表于 2018-03-21 10:00:00">2018-03-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">Lambda表达式简介Lambda表达式是比匿名方法更简洁的一种匿名方法语法。Lambda运算符：所有的Lambda表达式都是用新的Lambda运算符 =&gt;,可以叫它，“转到”或者 “成为”。运算符将表达式分为两部分，左边指定输入参数，右边是lambda的主体。
-lambda表达式：1.一个参数：param&#x3D;&gt;expr2.多个参数：（param-list）&#x3D;&gt;expr
-匿名方法转换为lambda表达式的步骤
-删除delegate关键字
-在参数列表和匿名方法主体之间放lambda运算符&#x3D;&gt;.lambda运算符读作goes to
-
-简化lambda表达式
-编译器还可以从委托的声明中知道委托参数的类型，因此lambda表达式允许我们省略类型参数。
-带有类型的参数列表称为显示类型
-省略类型的参数列表称为隐式类型
-
-
-如果只有一个隐式类型参数，我们可以省略周围的括号
-lambda表达式允许表达式的主体是语句块或者表达式。如果语句块包含了一个返回语句，我们可以将语句块替换为return关键字后的表达式（即 去掉关键字return）
-
-实例123 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/03/20/CSharp/39CSharp_Multithreading/" title="C#笔记（39）多线程"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（39）多线程"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/20/CSharp/39CSharp_Multithreading/" title="C#笔记（39）多线程">C#笔记（39）多线程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-20T02:00:00.000Z" title="发表于 2018-03-20 10:00:00">2018-03-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">多线程线程 被定义为程序的执行路径。每个线程都定义了一个独特的控制流。如果您的应用程序涉及到复杂的和耗时的操作，那么设置不同的线程执行路径往往是有益的，每个线程执行特定的工作。
-线程是轻量级进程。一个使用线程的常见实例是现代操作系统中并行编程的实现。使用线程节省了 CPU 周期的浪费，同时提高了应用程序的效率。
-到目前为止我们编写的程序是一个单线程作为应用程序的运行实例的单一的过程运行的。但是，这样子应用程序同时只能执行一个任务。为了同时执行多个任务，它可以被划分为更小的线程。
-线程生命周期线程生命周期开始于 System.Threading.Thread 类的对象被创建时，结束于线程被终止或完成执行时。
-下面列出了线程生命周期中的各种状态：
-
-未启动状态：当线程实例被创建但 Start 方法未被调用时的状况。
-
-就绪状态：当线程准备好运行并等待 CPU 周期时的状况。
-
-不可运行状态：下面的几种情况下线程是不可运行的：
-
-已经调用 Sleep 方法
-已经调用 Wait 方法
-通过 I&#x2F;O 操作阻塞
-
-
-死亡状态：当线程已完成执行或已中止时的状况。
-
-
-主线程在 C# 中，S ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/03/19/CSharp/38CSharp_Unsafe/" title="C#笔记（38）不安全代码"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（38）不安全代码"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/19/CSharp/38CSharp_Unsafe/" title="C#笔记（38）不安全代码">C#笔记（38）不安全代码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-19T02:00:00.000Z" title="发表于 2018-03-19 10:00:00">2018-03-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">不安全代码当一个代码块使用 unsafe 修饰符标记时，C# 允许在函数中使用指针变量。不安全代码或非托管代码是指使用了指针变量的代码块。
-指针变量指针 是值为另一个变量的地址的变量，即，内存位置的直接地址。就像其他变量或常量，您必须在使用指针存储其他变量地址之前声明指针。
-指针变量声明的一般形式为：
-1type* var-name;
-
-下面是指针类型声明的实例：
-
-
-
-实例
-描述
-
-
-
-int* p
-p 是指向整数的指针。
-
-
-double* p
-p 是指向双精度数的指针。
-
-
-float* p
-p 是指向浮点数的指针。
-
-
-int** p
-p 是指向整数的指针的指针。
-
-
-int*[] p
-p 是指向整数的指针的一维数组。
-
-
-char* p
-p 是指向字符的指针。
-
-
-void* p
-p 是指向未知类型的指针。
-
-
-在同一个声明中声明多个指针时，星号 ***** 仅与基础类型一起写入；而不是用作每个指针名称的前缀。 例如:
-12int* p1, p2, p3;     // 正确  int *p1, *p2, *p3;   // 错误 
-
-下面的实例说明了 C# 中使用了 uns ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/03/16/CSharp/37CSharp_Property/" title="C#笔记（37）匿名方法"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（37）匿名方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/16/CSharp/37CSharp_Property/" title="C#笔记（37）匿名方法">C#笔记（37）匿名方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-16T02:00:00.000Z" title="发表于 2018-03-16 10:00:00">2018-03-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">匿名方法我们已经提到过，委托是用于引用与其具有相同标签的方法。换句话说，您可以使用委托对象调用可由委托引用的方法。
-匿名方法（Anonymous methods） 提供了一种传递代码块作为委托参数的技术。匿名方法是没有名称只有主体的方法。
-在匿名方法中您不需要指定返回类型，它是从方法主体内的 return 语句推断的。
-编写匿名方法的语法匿名方法是通过使用 delegate 关键字创建委托实例来声明的。例如：
-123456delegate void NumberChanger(int n);...NumberChanger nc = delegate(int x)&#123;    Console.WriteLine(&quot;Anonymous Method: &#123;0&#125;&quot;, x);&#125;;
-
-代码块 Console.WriteLine(“Anonymous Method: {0}”, x); 是匿名方法的主体。
-委托可以通过匿名方法调用，也可以通过命名方法调用，即，通过向委托对象传递方法参数。
-注意: 匿名方法的主体后面需要一个 **;**。
-例如 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/03/15/CSharp/36CSharp_Generic/" title="C#笔记（36）泛型（Generic）"><img class="post_bg" src= "/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（36）泛型（Generic）"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/15/CSharp/36CSharp_Generic/" title="C#笔记（36）泛型（Generic）">C#笔记（36）泛型（Generic）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-15T02:00:00.000Z" title="发表于 2018-03-15 10:00:00">2018-03-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">泛型（Generic）泛型（Generic） 允许您延迟编写类或方法中的编程元素的数据类型的规范，直到实际在程序中使用它的时候。换句话说，泛型允许您编写一个可以与任何数据类型一起工作的类或方法。
-您可以通过数据类型的替代参数编写类或方法的规范。当编译器遇到类的构造函数或方法的函数调用时，它会生成代码来处理指定的数据类型。下面这个简单的实例将有助于您理解这个概念：
-实例1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556using System;using System.Collections.Generic;namespace GenericApplication&#123;    public class MyGenericArray&lt;T&gt;    &#123;        private T[] array;        public MyGenericArray(int size)        &#123;    ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/8/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/#content-inner">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/#content-inner">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/#content-inner">13</a><a class="extend next" rel="next" href="/page/10/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/./img/%E5%89%91%E5%AE%A2300px.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Winward King</div><div class="author-info__description">欢迎来到我的博客小站</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">154</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">65</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Winward-King"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2049206212&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://www.instagram.com/accounts/login/?next=/wenqiang39/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a><a class="social-icon" href="mailto:ybqcdxs@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/5807345081/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" title="微博"><i class="fa-brands fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">点击上方‘QQ’图标可以私聊博主<br> 欢迎Unity技术爱好者入群<br> 欢迎Nas技术爱好者入群<br> <div class="social-button"> <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=YWE4XN5C" target="_blank">😁QQ 1 群 😁</a> </div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/07/Hardware/06OpenWRTLocal/" title="OpenWRT本地编译(Lede)"><img src= "/img/loading.gif" data-lazy-src="/images/Wlop/07.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OpenWRT本地编译(Lede)"/></a><div class="content"><a class="title" href="/2023/06/07/Hardware/06OpenWRTLocal/" title="OpenWRT本地编译(Lede)">OpenWRT本地编译(Lede)</a><time datetime="2023-06-07T04:30:00.000Z" title="发表于 2023-06-07 12:30:00">2023-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/03/Hardware/05DDWrt/" title="DD-WRT"><img src= "/img/loading.gif" data-lazy-src="/images/Wlop/22.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DD-WRT"/></a><div class="content"><a class="title" href="/2023/06/03/Hardware/05DDWrt/" title="DD-WRT">DD-WRT</a><time datetime="2023-06-03T04:30:00.000Z" title="发表于 2023-06-03 12:30:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/03/Hardware/01Router/" title="路由器"><img src= "/img/loading.gif" data-lazy-src="/images/Wlop/78.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="路由器"/></a><div class="content"><a class="title" href="/2023/06/03/Hardware/01Router/" title="路由器">路由器</a><time datetime="2023-06-03T02:30:00.000Z" title="发表于 2023-06-03 10:30:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/Aio/04Jellyfin/" title="Jellyfin"><img src= "/img/loading.gif" data-lazy-src="/images/Wlop/100.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Jellyfin"/></a><div class="content"><a class="title" href="/2023/06/01/Aio/04Jellyfin/" title="Jellyfin">Jellyfin</a><time datetime="2023-06-01T04:20:00.000Z" title="发表于 2023-06-01 12:20:00">2023-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/Aio/03ddnsForIPv6/" title="群晖通过ipv6及域名访问"><img src= "/img/loading.gif" data-lazy-src="/images/Wlop/68.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群晖通过ipv6及域名访问"/></a><div class="content"><a class="title" href="/2023/06/01/Aio/03ddnsForIPv6/" title="群晖通过ipv6及域名访问">群晖通过ipv6及域名访问</a><time datetime="2023-06-01T02:20:00.000Z" title="发表于 2023-06-01 10:20:00">2023-06-01</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>分类</span>
-            
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/"><span class="card-category-list-name">AI</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/CSharp/"><span class="card-category-list-name">CSharp</span><span class="card-category-list-count">46</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DesignPattern/"><span class="card-category-list-name">DesignPattern</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Game/"><span class="card-category-list-name">Game</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Git/"><span class="card-category-list-name">Git</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/HEXO/"><span class="card-category-list-name">HEXO</span><span class="card-category-list-count">24</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hardware/"><span class="card-category-list-name">Hardware</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Math/"><span class="card-category-list-name">Math</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Nas/"><span class="card-category-list-name">Nas</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Office/"><span class="card-category-list-name">Office</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Sofeware/"><span class="card-category-list-name">Sofeware</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity3D/"><span class="card-category-list-name">Unity3D</span><span class="card-category-list-count">38</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/VSCode/"><span class="card-category-list-name">VSCode</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/VStudio/"><span class="card-category-list-name">VStudio</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">操作系统</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="card-category-list-name">数据结构</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机组成原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"><span class="card-category-list-name">计算机网络</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B5%84%E8%AE%AF%E6%9D%82%E8%B0%88/"><span class="card-category-list-name">资讯杂谈</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/new-bing/" style="font-size: 1.18em; color: rgb(156, 41, 100)">new bing</a><a href="/tags/ai/" style="font-size: 1.18em; color: rgb(99, 118, 174)">ai</a><a href="/tags/ChatGPT/" style="font-size: 1.18em; color: rgb(5, 79, 200)">ChatGPT</a><a href="/tags/esxi/" style="font-size: 1.22em; color: rgb(15, 139, 188)">esxi</a><a href="/tags/synology/" style="font-size: 1.25em; color: rgb(90, 191, 117)">synology</a><a href="/tags/vmware/" style="font-size: 1.15em; color: rgb(62, 13, 116)">vmware</a><a href="/tags/docker/" style="font-size: 1.18em; color: rgb(124, 56, 140)">docker</a><a href="/tags/c/" style="font-size: 1.45em; color: rgb(160, 37, 100)">c#</a><a href="/tags/note/" style="font-size: 1.42em; color: rgb(63, 98, 67)">note</a><a href="/tags/data-structure/" style="font-size: 1.15em; color: rgb(136, 2, 88)">data structure</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.15em; color: rgb(134, 162, 183)">数据结构</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(37, 159, 58)">计算机组成原理</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.15em; color: rgb(97, 78, 94)">操作系统</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.18em; color: rgb(113, 87, 76)">计算机网络</a><a href="/tags/game/" style="font-size: 1.28em; color: rgb(50, 191, 65)">game</a><a href="/tags/DesignPattern/" style="font-size: 1.15em; color: rgb(63, 155, 11)">DesignPattern</a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.15em; color: rgb(24, 7, 91)">设计模式</a><a href="/tags/git/" style="font-size: 1.32em; color: rgb(141, 174, 64)">git</a><a href="/tags/github/" style="font-size: 1.28em; color: rgb(23, 99, 187)">github</a><a href="/tags/solution/" style="font-size: 1.35em; color: rgb(175, 104, 138)">solution</a><a href="/tags/gitee/" style="font-size: 1.18em; color: rgb(126, 110, 191)">gitee</a><a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" style="font-size: 1.15em; color: rgb(40, 59, 147)">路由器</a><a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 1.15em; color: rgb(94, 30, 181)">硬件</a><a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 1.15em; color: rgb(156, 146, 49)">单片机</a><a href="/tags/Bootloader/" style="font-size: 1.15em; color: rgb(1, 132, 116)">Bootloader</a><a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%8C%E8%BD%AF%E8%B7%AF%E7%94%B1/" style="font-size: 1.25em; color: rgb(64, 105, 34)">路由器，软路由</a><a href="/tags/hexo/" style="font-size: 1.38em; color: rgb(132, 157, 110)">hexo</a><a href="/tags/hello-world/" style="font-size: 1.15em; color: rgb(28, 21, 16)">hello world</a><a href="/tags/npm/" style="font-size: 1.15em; color: rgb(108, 136, 200)">npm</a><a href="/tags/note-js/" style="font-size: 1.15em; color: rgb(97, 43, 72)">note.js</a><a href="/tags/yml/" style="font-size: 1.15em; color: rgb(176, 140, 185)">yml</a><a href="/tags/yaml/" style="font-size: 1.15em; color: rgb(197, 128, 143)">yaml</a><a href="/tags/pwa/" style="font-size: 1.15em; color: rgb(16, 123, 181)">pwa</a><a href="/tags/live2d/" style="font-size: 1.15em; color: rgb(194, 132, 74)">live2d</a><a href="/tags/transcoding/" style="font-size: 1.15em; color: rgb(152, 41, 164)">transcoding</a><a href="/tags/css/" style="font-size: 1.15em; color: rgb(159, 17, 9)">css</a><a href="/tags/twikoo/" style="font-size: 1.15em; color: rgb(57, 90, 2)">twikoo</a><a href="/tags/cdn/" style="font-size: 1.22em; color: rgb(66, 115, 183)">cdn</a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(195, 2, 78)">图床</a><a href="/tags/picgo/" style="font-size: 1.15em; color: rgb(96, 79, 155)">picgo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">十二月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget user-map" id="user-map"><div class="item-headline"><i class="fas fa-heartbeat"></i><span>访客地图</span></div><div class="item-content"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=DqFIO-zIqGPF_lOi8MNu3RQPRfTZfQ1lPYOuroi68nU"></script></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2023 By Winward King</div><div class="footer_custom_text">欢迎来到我的博客小站</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
-  if (typeof pangu === 'object') pangu.autoSpacingPage()
-  else {
-    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
-      .then(() => {
-        pangu.autoSpacingPage()
-      })
-  }
+  <link rel="stylesheet" href="/js/footer_beautify/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
 }
 
-function panguInit () {
-  if (false){
-    GLOBAL_CONFIG_SITE.isPost && panguFn()
-  } else {
-    panguFn()
-  }
-}
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
 
-document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      if (true) {
-        const from = '出自 ' + data.from
-        const sub = ["今日事&#44;今日毕","Never put off till tomorrow what you can do today"]
-        sub.unshift(data.hitokoto, from)
-        window.typed = new Typed('#subtitle', {
-          strings: sub,
-          startDelay: 300,
-          typeSpeed: 150,
-          loop: true,
-          backSpeed: 50,
-        })
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/loading.gif" data-lazy-src="/./img/%E5%89%91%E5%AE%A2300px.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">156</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">65</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 兴趣</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fa-fw fas fa-book"></i><span> 阅读过的书</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa-fw fas fa-video"></i><span> 看过的影视</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fa-fw fas fa-gamepad"></i><span> 玩过的游戏</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fa-fw fas fa-music"></i><span> 听过的音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 聚合</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://nastab.timelines.ml/"><i class="fa-fw fa-solid fa-window-maximize"></i><span> 导航页</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://yun.baidu.com/"><i class="fa-fw fa-solid fa-computer"></i><span> 群晖</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://dsm.timelines.ml:8096/"><i class="fa-fw fas fa-video"></i><span> 影音库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/28967580/"><i class="fa-fw fa-brands fa-bilibili"></i><span> 我的B站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/images/Wlop/164521452930013.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Winward King's Blog</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 兴趣</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fa-fw fas fa-book"></i><span> 阅读过的书</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa-fw fas fa-video"></i><span> 看过的影视</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fa-fw fas fa-gamepad"></i><span> 玩过的游戏</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fa-fw fas fa-music"></i><span> 听过的音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 聚合</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://nastab.timelines.ml/"><i class="fa-fw fa-solid fa-window-maximize"></i><span> 导航页</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://yun.baidu.com/"><i class="fa-fw fa-solid fa-computer"></i><span> 群晖</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://dsm.timelines.ml:8096/"><i class="fa-fw fas fa-video"></i><span> 影音库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/28967580/"><i class="fa-fw fa-brands fa-bilibili"></i><span> 我的B站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Winward King's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2049206212&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://www.instagram.com/accounts/login/?next=/wenqiang39/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a><a class="social-icon" href="mailto:ybqcdxs@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/5807345081/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" title="微博"><i class="fa-brands fa-weibo"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/05/Unity3D/07Unity_FairyGUI/" title="FairyGUI"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FairyGUI"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/05/Unity3D/07Unity_FairyGUI/" title="FairyGUI">FairyGUI</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-05T15:20:00.000Z" title="发表于 2018-04-05 23:20:00">2018-04-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity-plugin/">unity-plugin</a></span></div><div class="content">FairyGUI简介 FairyGUI是一款UI制作的编辑器，它是一个跨平台的UI编辑器，支持多个开发平台。开发难度：  在线网站 官网：https://www.fairygui.com/ 在线手册：https://www.fairygui.com/docs/editor Github开源项目：https://github.com/fairygui  UGUI、NGUI 和 FairyGUI 对比UGUIUGUI有锚点系统，不可否认，锚点非常优秀，也能实现各种布局，但是有一个问题是锚点只能相对父物体，这也就意味着要实现某种布局时，可能要加入很多空的UI元素来形成一层一层的父物体以使锚点发挥作用。这对UI制作来说很不友好，不仅要考虑相互关系，还要考虑怎么排布父子关系。 FairyGUIFairyGUI提供了一个关联系统，可以关联任意两个元素，使一个元素的位置相对另一个元素去定义，不用考虑层级关系，这一点我认为是非常好的。从UI组件来说，FairyGUI提供的组件要丰富得多，常见的功能都可以在FairyGUI中用鼠标点点点来完成，UGUI组件比较基础，一个可切换的Button就得写代...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/05/Unity3D/07Unity_DOTween/" title="DoTween"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DoTween"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/05/Unity3D/07Unity_DOTween/" title="DoTween">DoTween</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-05T14:20:00.000Z" title="发表于 2018-04-05 22:20:00">2018-04-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity-plugin/">unity-plugin</a></span></div><div class="content">DOTween简介 DOTween是一个免费的Unity3D动画插件，少量编码即可以实现常见的动画效果  DOTween和iTween iTween的性能没有DOTween好，因为iTween每个动画使用一个Update维护  安装 Window-&gt;AssetStore下载 导入Package 菜单栏-&gt;Tools-&gt;DOTween Utility Panel-&gt;Setup按钮  更新 删除Resources&#x2F;DOTweenSettings文件 删除老的DOTween安装目录Demigiant 重新导入Package，再走安装流程  在线手册 http://dotween.demigiant.com/documentation.php https://shenjun4unity.github.io/unityhtml/%E7%AC%AC9%E7%AB%A0%20DOTween/9.2%20%E6%96%87%E6%A1%A3.html  命名空间1using DG.Tweening 常用方法123456DoFade()//淡入或淡出DoLocal...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/04/Unity3D/04Unity_Lifecycle/" title="Unity脚本的生命周期"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity脚本的生命周期"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/04/Unity3D/04Unity_Lifecycle/" title="Unity脚本的生命周期">Unity脚本的生命周期</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T16:20:00.000Z" title="发表于 2018-04-04 00:20:00">2018-04-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">生命周期中常用方法 特性序列化字段：在编辑器中显示私有变量12[SerializeField]    private int a = 1;  在编译器中隐藏字段12[HideInInspector]    public int b = 2;   只能在范围内设置值12[Range(0,15)]    public int c = 3;   一、初始化相关的方法Awake()1private  void  Awake()  &#123;......&#125;    脚本被加载到场景中时自动调用 是整个生命周期中最先执行的方法 当脚本实例被加载时会自动调用这个方法 整个生命周期中只执行一次  该方法主要用于在游戏开始之前初始化对象或游戏状态，如：使用 GameObject.FindWithTag()查询游戏对象。 OnEnable()1private  void  OnEnable()  &#123;......&#125;   当对象变为可用或激活状态时调用，判断对象或脚本是否可用 执行完Awake()方法后，如果当前脚本可用或可激活，按正常执行顺序则会执行OnEnable()方...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/03/Unity3D/03Unity_FindObj/" title="Unity查找物体的6种方法详解"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity查找物体的6种方法详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_FindObj/" title="Unity查找物体的6种方法详解">Unity查找物体的6种方法详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T15:20:00.000Z" title="发表于 2018-04-03 23:20:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">前言 无论是哪种方法,为了性能的考虑,请不要将获取物体的代码写在Update里  请注意GameObject和gameObject的区别  请注意Transform和transform的区别   查找物体方法(速查表) GameObject(Unity的所有物体的基类,针对全局,方法是静态方法,所以可以直接用)注意:非gameObject,注意大小写,gameObject指的是该物体,gameObject无这些方法  transform(是本物体的transform的组件,所以查找都是针对本物体的)注意:非Transform,注意大小写,Transform指的是Transform类型,Transform无这些方法  P.S. transform效率比GameObject高,强烈建议使用transform       查找物体的6种方法 方法 优点 缺点    GameObject.Find(物体名字) 递归遍历全局物体,直到找到第一个为Capsule的物体 全局搜索 1. 无法查找隐藏对象2.效率低下(相当于递归遍历查找)   GameObject.Find(“GameObjec...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/03/Unity3D/03Unity_GgTt/" title="Gameobject,gameObject,Transform,transform的区别和关联"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gameobject,gameObject,Transform,transform的区别和关联"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_GgTt/" title="Gameobject,gameObject,Transform,transform的区别和关联">Gameobject,gameObject,Transform,transform的区别和关联</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T14:55:00.000Z" title="发表于 2018-04-03 22:55:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Gameobject和gameobject Gameobject是一个类型，所有的游戏物件都是这个类型的对象。 gameobject是一个对象， 就跟java里面的this一样， 指的是这个脚本所附着的游戏物件  12345678public class ShowSliderValue : MonoBehaviour &#123;        private GameObject  obje; //定义GameObject类型的指针     void Start()&#123;         Text  lal =gameObject.GetComponent&lt;Text&gt; (); //通过gameObject获取到Text组件.         Debug.Log (&quot;Text&quot; + lal.text); //打印获取到组件的中的text的属性     &#125; &#125;   Text  lal =gameObject.GetComponent&lt;Text&gt; () 中不使用gameObject , 直接通过GetCompone...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/03/Unity3D/03Unity_API/" title="Unity常用的基础 API"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity常用的基础 API"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/03/Unity3D/03Unity_API/" title="Unity常用的基础 API">Unity常用的基础 API</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-03T14:20:00.000Z" title="发表于 2018-04-03 22:20:00">2018-04-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity常用的基础 API 在线手册 Unity 脚本API 2020.02 unity5圣典中文API手册.chm   组件 坐标系 鼠标事件 Time类 Vector3 Transform Gameobject  lnput类  TransformTransform组件的成员变量   组件名称 组件作用    position 世界坐标中的位置   localPosition 父对象局部坐标系中的位置   enlerAngles 世界坐标系中以欧拉角表示的旋转   localEulerAngles 父对象局部坐标系中的欧拉角   right 对象在世界坐标系中的右方向   up 对象在世界坐标系中的上方向   forward 对象在世界坐标系中的前方向   rotation 世界坐标系中以以元数表示的旋转   localRotation 父对象局部坐标系中以四元数表示的旋转   localScale 父对象局部坐标系中的缩放比例   parent 父对象的Transform组件   Transform组件的成员函数   组件名称 组件作用    Translate 按指定的...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/04/02/Unity3D/02Unity_Usually/" title="Unity基础界面"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity基础界面"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/02/Unity3D/02Unity_Usually/" title="Unity基础界面">Unity基础界面</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-04-02T14:20:00.000Z" title="发表于 2018-04-02 22:20:00">2018-04-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity 版本号与许可证2017.1.0 、2017.1.1 、 2017.2.0 、2017.3.4 、 5.5.3  p4 小版本号高出现bug可能性更小；一台电脑可以安装多个版本的unity，但是需要安装在不同路径；安装Unity时不能有中文路径；unity项目路径也不要有中文 菜单栏与快捷键 File (文件菜单) File 菜单主要用于打开和保存场景项目，同时也可以创建新场景。 File 菜单功能及快捷键列表：     命令 描述 快捷键    New Scene（新建场景） 创建一个新的场景 Ctrl + N   Open Scene（打开场景） 打开一个已经创建的场景 Ctrl + O   Save Scene（保存场景） 保存当前场景 Ctrl + S   Save Scene As（另存场景） 将当前场景另存为一个新场景 Ctrl + Shift + S   New Project（新建项目） 新建一个项目 无   Open Project（打开项目） 打开一个已经创建的项目 无   Save Project（保存项目） 保存当前项目 无   Build Se...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/04/01/Unity3D/01Unity_Profile/" title="Unity简介"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity简介"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/04/01/Unity3D/01Unity_Profile/" title="Unity简介">Unity简介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-31T16:20:00.000Z" title="发表于 2018-04-01 00:20:00">2018-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity3D/">Unity3D</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/unity3d/">unity3d</a></span></div><div class="content">Unity 简介由 Unity Technologies 公司开发的用于轻松创建游戏和三维互动内容的开发工具，是一个国际领先的专业游戏引擎。 Unity 网站资源 (CN)   资源名称 网址    Unity中国官网 https://unity.cn/   Unity开发者社区 https://developer.unity.cn/   Unity Learn Premium https://unity.com/cn/products/unity-learn   Unity 网站资源 (World)   资源名称 网址    Unity官网 http://unity3d.com   Unity论坛 http://forum.china.unity3d.com/fourm.php   Unity博客 http://answers.unity3d.com/index.html   Unity官方在线案例 http://unity3d.com/gallery/demos/live-demos   Unity官方项目源文件 http://nity3d.com/gallery/demos...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/03/21/CSharp/41CSharp_Lambda/" title="C#笔记（41）Lambda表达式"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（41）Lambda表达式"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/21/CSharp/41CSharp_Lambda/" title="C#笔记（41）Lambda表达式">C#笔记（41）Lambda表达式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-21T02:00:00.000Z" title="发表于 2018-03-21 10:00:00">2018-03-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">Lambda表达式简介Lambda表达式是比匿名方法更简洁的一种匿名方法语法。Lambda运算符：所有的Lambda表达式都是用新的Lambda运算符 =&gt;,可以叫它，“转到”或者 “成为”。运算符将表达式分为两部分，左边指定输入参数，右边是lambda的主体。 lambda表达式：1.一个参数：param&#x3D;&gt;expr2.多个参数：（param-list）&#x3D;&gt;expr 匿名方法转换为lambda表达式的步骤 删除delegate关键字 在参数列表和匿名方法主体之间放lambda运算符&#x3D;&gt;.lambda运算符读作goes to  简化lambda表达式 编译器还可以从委托的声明中知道委托参数的类型，因此lambda表达式允许我们省略类型参数。 带有类型的参数列表称为显示类型 省略类型的参数列表称为隐式类型   如果只有一个隐式类型参数，我们可以省略周围的括号 lambda表达式允许表达式的主体是语句块或者表达式。如果语句块包含了一个返回语句，我们可以将语句块替换为return关键字后的表达式（即 去掉关键字return）  实例...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/03/21/CSharp/40CSharp_Try/" title="C#笔记（40）if(){}try{}catch{}语句"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（40）if(){}try{}catch{}语句"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/21/CSharp/40CSharp_Try/" title="C#笔记（40）if(){}try{}catch{}语句">C#笔记（40）if(){}try{}catch{}语句</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-21T02:00:00.000Z" title="发表于 2018-03-21 10:00:00">2018-03-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">try…catch 语句用来测试代码中的错误，try 部分包含需要运行的代码，而 catch 部分包含错误发生时运行的代码。 用法12345try &#123;    //可能会导致错误的代码&#125; catch (error) &#123;    //在错误发生时怎么处理&#125;  实例12345try &#123;    window.someNonexistentFunction(); //调用不存在的函数&#125; catch (error) &#123;    alert(&#x27;An error happened!&#x27;);&#125; finally子句虽然在try-catch语句中是可选的，但finally子句一经使用，其代码无论如何都会执行。换句话说，try语句块中的代码全部正常执行，finally子句会执行；如果因为出错而执行了catch语句块，finally子句照样还会执行。只要代码中包含finally子句，则无论try或catch语句块中包含什么样的代码——甚至return语句，都不会阻止finally子句的执行。来看下面这个函数： 1...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/03/20/CSharp/39CSharp_Multithreading/" title="C#笔记（39）多线程"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（39）多线程"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/20/CSharp/39CSharp_Multithreading/" title="C#笔记（39）多线程">C#笔记（39）多线程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-20T02:00:00.000Z" title="发表于 2018-03-20 10:00:00">2018-03-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">多线程线程 被定义为程序的执行路径。每个线程都定义了一个独特的控制流。如果您的应用程序涉及到复杂的和耗时的操作，那么设置不同的线程执行路径往往是有益的，每个线程执行特定的工作。 线程是轻量级进程。一个使用线程的常见实例是现代操作系统中并行编程的实现。使用线程节省了 CPU 周期的浪费，同时提高了应用程序的效率。 到目前为止我们编写的程序是一个单线程作为应用程序的运行实例的单一的过程运行的。但是，这样子应用程序同时只能执行一个任务。为了同时执行多个任务，它可以被划分为更小的线程。 线程生命周期线程生命周期开始于 System.Threading.Thread 类的对象被创建时，结束于线程被终止或完成执行时。 下面列出了线程生命周期中的各种状态：  未启动状态：当线程实例被创建但 Start 方法未被调用时的状况。  就绪状态：当线程准备好运行并等待 CPU 周期时的状况。  不可运行状态：下面的几种情况下线程是不可运行的：  已经调用 Sleep 方法 已经调用 Wait 方法 通过 I&#x2F;O 操作阻塞   死亡状态：当线程已完成执行或已中止时的状况。   主线程在 C# ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/03/19/CSharp/38CSharp_Unsafe/" title="C#笔记（38）不安全代码"><img class="post-bg" src="/img/loading.gif" data-lazy-src="/images/Wallpaper/166332360423110087CSharp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C#笔记（38）不安全代码"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/03/19/CSharp/38CSharp_Unsafe/" title="C#笔记（38）不安全代码">C#笔记（38）不安全代码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-19T02:00:00.000Z" title="发表于 2018-03-19 10:00:00">2018-03-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c#</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/note/">note</a></span></div><div class="content">不安全代码当一个代码块使用 unsafe 修饰符标记时，C# 允许在函数中使用指针变量。不安全代码或非托管代码是指使用了指针变量的代码块。 指针变量指针 是值为另一个变量的地址的变量，即，内存位置的直接地址。就像其他变量或常量，您必须在使用指针存储其他变量地址之前声明指针。 指针变量声明的一般形式为： 1type* var-name;  下面是指针类型声明的实例：    实例 描述    int* p p 是指向整数的指针。   double* p p 是指向双精度数的指针。   float* p p 是指向浮点数的指针。   int** p p 是指向整数的指针的指针。   int*[] p p 是指向整数的指针的一维数组。   char* p p 是指向字符的指针。   void* p p 是指向未知类型的指针。   在同一个声明中声明多个指针时，星号 ***** 仅与基础类型一起写入；而不是用作每个指针名称的前缀。 例如: 12int* p1, p2, p3;     // 正确  int *p1, *p2, *p3;   // 错误   下面的实例说明了 C# 中使用了 ...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/8/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/#content-inner">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/#content-inner">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/#content-inner">13</a><a class="extend next" rel="next" href="/page/10/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/loading.gif" data-lazy-src="/./img/%E5%89%91%E5%AE%A2300px.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Winward King</div><div class="author-info-description">欢迎来到我的博客小站</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">156</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">65</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Winward-King"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2049206212&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://www.instagram.com/accounts/login/?next=/wenqiang39/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a><a class="social-icon" href="mailto:ybqcdxs@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/5807345081/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" title="微博"><i class="fa-brands fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">点击上方‘QQ’图标可以私聊博主<br> 欢迎Unity技术爱好者入群<br> 欢迎Nas技术爱好者入群<br> <div class="social-button"> <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=YWE4XN5C" target="_blank">😁QQ 1 群 😁</a> </div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/07/23/Unity_Job/01Unity_ADB/" title="Unity中ADB调试配置及VR设备处理"><img src="/img/loading.gif" data-lazy-src="/images/Wallpaper/10012unity3d.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity中ADB调试配置及VR设备处理"/></a><div class="content"><a class="title" href="/2023/07/23/Unity_Job/01Unity_ADB/" title="Unity中ADB调试配置及VR设备处理">Unity中ADB调试配置及VR设备处理</a><time datetime="2023-07-23T14:20:00.000Z" title="发表于 2023-07-23 22:20:00">2023-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/07/Hardware/06OpenWRTLocal/" title="OpenWRT本地编译(Lede)"><img src="/img/loading.gif" data-lazy-src="/images/Wlop/07.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OpenWRT本地编译(Lede)"/></a><div class="content"><a class="title" href="/2023/06/07/Hardware/06OpenWRTLocal/" title="OpenWRT本地编译(Lede)">OpenWRT本地编译(Lede)</a><time datetime="2023-06-07T04:30:00.000Z" title="发表于 2023-06-07 12:30:00">2023-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/03/Hardware/05DDWrt/" title="DD-WRT"><img src="/img/loading.gif" data-lazy-src="/images/Wlop/22.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DD-WRT"/></a><div class="content"><a class="title" href="/2023/06/03/Hardware/05DDWrt/" title="DD-WRT">DD-WRT</a><time datetime="2023-06-03T04:30:00.000Z" title="发表于 2023-06-03 12:30:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/03/Hardware/01Router/" title="路由器"><img src="/img/loading.gif" data-lazy-src="/images/Wlop/78.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="路由器"/></a><div class="content"><a class="title" href="/2023/06/03/Hardware/01Router/" title="路由器">路由器</a><time datetime="2023-06-03T02:30:00.000Z" title="发表于 2023-06-03 10:30:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/Aio/04Jellyfin/" title="Jellyfin"><img src="/img/loading.gif" data-lazy-src="/images/Wlop/100.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Jellyfin"/></a><div class="content"><a class="title" href="/2023/06/01/Aio/04Jellyfin/" title="Jellyfin">Jellyfin</a><time datetime="2023-06-01T04:20:00.000Z" title="发表于 2023-06-01 12:20:00">2023-06-01</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>加载中...</span></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/new-bing/" style="font-size: 1.18em; color: rgb(193, 91, 136);">new bing</a><a href="/tags/ai/" style="font-size: 1.18em; color: rgb(57, 177, 197);">ai</a><a href="/tags/ChatGPT/" style="font-size: 1.18em; color: rgb(117, 123, 88);">ChatGPT</a><a href="/tags/data-structure/" style="font-size: 1.15em; color: rgb(163, 64, 88);">data structure</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.15em; color: rgb(128, 50, 179);">数据结构</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.15em; color: rgb(172, 76, 120);">操作系统</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(194, 113, 76);">计算机组成原理</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.18em; color: rgb(196, 50, 155);">计算机网络</a><a href="/tags/esxi/" style="font-size: 1.22em; color: rgb(173, 58, 66);">esxi</a><a href="/tags/synology/" style="font-size: 1.25em; color: rgb(50, 190, 192);">synology</a><a href="/tags/vmware/" style="font-size: 1.15em; color: rgb(116, 85, 158);">vmware</a><a href="/tags/docker/" style="font-size: 1.18em; color: rgb(62, 50, 164);">docker</a><a href="/tags/c/" style="font-size: 1.45em; color: rgb(50, 190, 50);">c#</a><a href="/tags/note/" style="font-size: 1.42em; color: rgb(62, 107, 56);">note</a><a href="/tags/hexo/" style="font-size: 1.38em; color: rgb(50, 50, 114);">hexo</a><a href="/tags/game/" style="font-size: 1.28em; color: rgb(166, 90, 184);">game</a><a href="/tags/npm/" style="font-size: 1.15em; color: rgb(50, 109, 150);">npm</a><a href="/tags/git/" style="font-size: 1.35em; color: rgb(50, 101, 50);">git</a><a href="/tags/note-js/" style="font-size: 1.15em; color: rgb(50, 127, 103);">note.js</a><a href="/tags/hello-world/" style="font-size: 1.15em; color: rgb(50, 55, 190);">hello world</a><a href="/tags/live2d/" style="font-size: 1.15em; color: rgb(114, 100, 75);">live2d</a><a href="/tags/yml/" style="font-size: 1.15em; color: rgb(175, 121, 125);">yml</a><a href="/tags/yaml/" style="font-size: 1.15em; color: rgb(61, 115, 150);">yaml</a><a href="/tags/pwa/" style="font-size: 1.15em; color: rgb(105, 110, 181);">pwa</a><a href="/tags/transcoding/" style="font-size: 1.15em; color: rgb(63, 125, 51);">transcoding</a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(52, 77, 58);">图床</a><a href="/tags/solution/" style="font-size: 1.35em; color: rgb(88, 80, 50);">solution</a><a href="/tags/cdn/" style="font-size: 1.22em; color: rgb(144, 140, 50);">cdn</a><a href="/tags/twikoo/" style="font-size: 1.15em; color: rgb(50, 128, 165);">twikoo</a><a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/" style="font-size: 1.15em; color: rgb(156, 50, 189);">腾讯云</a><a href="/tags/picgo/" style="font-size: 1.15em; color: rgb(50, 50, 158);">picgo</a><a href="/tags/css/" style="font-size: 1.15em; color: rgb(101, 58, 51);">css</a><a href="/tags/gitee/" style="font-size: 1.18em; color: rgb(50, 52, 86);">gitee</a><a href="/tags/git%EF%BC%8Cissue/" style="font-size: 1.15em; color: rgb(64, 123, 139);">git，issue</a><a href="/tags/blog/" style="font-size: 1.28em; color: rgb(78, 163, 50);">blog</a><a href="/tags/Typora/" style="font-size: 1.15em; color: rgb(200, 54, 131);">Typora</a><a href="/tags/Ubuntu/" style="font-size: 1.15em; color: rgb(121, 192, 123);">Ubuntu</a><a href="/tags/kali/" style="font-size: 1.18em; color: rgb(177, 164, 181);">kali</a><a href="/tags/github/" style="font-size: 1.32em; color: rgb(91, 71, 50);">github</a><a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" style="font-size: 1.15em; color: rgb(115, 183, 50);">路由器</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/07/">
+            <span class="card-archive-list-date">
+              七月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/06/">
+            <span class="card-archive-list-date">
+              六月 2023
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/05/">
+            <span class="card-archive-list-date">
+              五月 2023
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/04/">
+            <span class="card-archive-list-date">
+              四月 2023
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/03/">
+            <span class="card-archive-list-date">
+              三月 2023
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/02/">
+            <span class="card-archive-list-date">
+              二月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2022/12/">
+            <span class="card-archive-list-date">
+              十二月 2022
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2022/10/">
+            <span class="card-archive-list-date">
+              十月 2022
+            </span>
+            <span class="card-archive-list-count">6</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget user-map" id="user-map"><div class="item-headline"><i class="fas fa-heartbeat"></i><span>访客地图</span></div><div class="item-content"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=DqFIO-zIqGPF_lOi8MNu3RQPRfTZfQ1lPYOuroi68nU"></script></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2017 - 2025 By Winward King</span></div><div class="footer_custom_text">欢迎来到我的博客小站</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="/js/tw_cn.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
       } else {
-        document.getElementById('subtitle').innerHTML = data.hitokoto
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
       }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["今日事&#44;今日毕","Never put off till tomorrow what you can do today"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  btf.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js')
+    .then(() => {
+      jinrishici.load(result => {
+        if (result && result.data && result.data.content) {
+          typedJSFn.processSubtitle(result.data.content)
+        } else {
+          throw new Error('Failed to parse the return value of Jinrishici API')
+        }
+      })
+    })
+    .catch(err => {
+      console.error('Failed to get the Jinrishici API:', err)
+      typedJSFn.processSubtitle(2)
     })
 }
-
-if (true) {
-  if (typeof Typed === 'function') {
-    subtitleType()
-  } else {
-    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
-  }
-} else {
-  subtitleType()
-}
-</script></div><script>window.addEventListener('load', () => {
-  const changeContent = (content) => {
+typedJSFn.run(subtitleType)
+</script></div><script>window.newestComments = {
+  changeContent: content => {
     if (content === '') return content
 
     content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
     content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
     content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
-    content = content.replace(/<[^>]+>/g,"") // remove html tag
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
 
     if (content.length > 150) {
-      content = content.substring(0,150) + '...'
+      content = content.substring(0, 150) + '...'
     }
     return content
-  }
+  },
 
-  const getComment = () => {
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'twikoo-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://twikoobot.winward.link/',
+        envId: 'https://twikoobot.837888.xyz',
         region: '',
-        pageSize: 4,
+        pageSize: 6,
         includeReply: true
-      }).then(function (res) {
+      }).then(res => {
         const twikooArray = res.map(e => {
           return {
             'content': changeContent(e.comment),
@@ -569,135 +387,102 @@ if (true) {
           }
         })
 
-        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
-        generateHtml(twikooArray)
-      }).catch(function (err) {
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+        btf.saveToLocal.set(keyName, JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray, ele)
+      }).catch(err => {
+        console.error(err)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
       })
     }
 
     if (typeof twikoo === 'object') {
       runTwikoo()
     } else {
-      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
+      btf.getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
     }
   }
 
-  const generateHtml = array => {
-    let result = ''
-
-    if (array.length) {
-      for (let i = 0; i < array.length; i++) {
-        result += '<div class=\'aside-list-item\'>'
-
-        if (true) {
-          const name = 'data-lazy-src'
-          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+  run(keyName, getComment)
+})</script><div class="aplayer no-destroy" data-id="14468537744" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"> </div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
         }
-        
-        result += `<div class='content'>
-        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
-        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
-        </div></div>`
-      }
-    } else {
-      result += '没有评论'
-    }
-
-    let $dom = document.querySelector('#card-newest-comments .aside-list')
-    $dom.innerHTML= result
-    window.lazyLoadInstance && window.lazyLoadInstance.update()
-    window.pjax && window.pjax.refresh($dom)
-  }
-
-  const newestCommentInit = () => {
-    if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('twikoo-newest-comments')
-      if (data) {
-        generateHtml(JSON.parse(data))
-      } else {
-        getComment()
       }
     }
   }
 
-  newestCommentInit()
-  document.addEventListener('pjax:complete', newestCommentInit)
-})</script><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
-
-var pjax = new Pjax({
-  elements: 'a:not([target="_blank"])',
-  selectors: pjaxSelectors,
-  cacheBust: false,
-  analytics: false,
-  scrollRestoration: false
-})
-
-document.addEventListener('pjax:send', function () {
-
-  // removeEventListener scroll 
-  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
-  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
-
-  typeof preloader === 'object' && preloader.initLoading()
-  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
-  
-  if (window.aplayers) {
-    for (let i = 0; i < window.aplayers.length; i++) {
-      if (!window.aplayers[i].options.fixed) {
-        window.aplayers[i].destroy()
-      }
-    }
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
   }
 
-  typeof typed === 'object' && typed.destroy()
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
-  //reset readmode
-  const $bodyClassList = document.body.classList
-  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
-
-  typeof disqusjs === 'object' && disqusjs.destroy()
-})
-
-document.addEventListener('pjax:complete', function () {
-  window.refreshFn()
-
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
-    const newScript = document.createElement('script')
-    const content = item.text || item.textContent || item.innerHTML || ""
-    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-    newScript.appendChild(document.createTextNode(content))
-    item.parentNode.replaceChild(newScript, item)
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
   })
 
-  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-  typeof chatBtnFn === 'function' && chatBtnFn()
-  typeof panguInit === 'function' && panguInit()
-
-  // google analytics
-  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
-
-  // baidu analytics
-  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
-
-  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-
-  // prismjs
-  typeof Prism === 'object' && Prism.highlightAll()
-
-  typeof preloader === 'object' && preloader.endLoading()
-})
-
-document.addEventListener('pjax:error', (e) => {
-  if (e.request.status === 404) {
-    pjax.loadUrl('/404.html')
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
   }
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><div id="background-effect"></div><script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script><script>VANTA.CLOUDS({"el":"#background-effect","mouseControls":true,"touchControls":true,"gyroControls":false,"minHeight":200,"minWidth":200})</script><script data-pjax>
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="请输入想要搜索的内容" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.1"></script></div></div><!-- hexo injector body_end start --><div id="background-effect"></div><script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script><script>VANTA.CLOUDS({"el":"#background-effect","mouseControls":true,"touchControls":true,"gyroControls":false,"minHeight":200,"minWidth":200,"scale":1,"scaleMobile":1})</script><script data-pjax>
   function butterfly_footer_beautify_injector_config(){
-    var parent_div_git = document.getElementById('footer-wrap');
-    var item_html = '<p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.1.0" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" style="margin-inline:5px" data-title="本站使用又拍云为静态资源提供CDN加速" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-00b6ff?style=flat&amp;logo=data:image/png;base64,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" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用双线部署，默认线路托管于Vercel" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    var parent_div_git = document.getElementsByClassName('footer-other')[0];
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v7.3.0" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v5.5.1" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" style="margin-inline:5px" data-title="本站使用又拍云为静态资源提供CDN加速" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-00b6ff?style=flat&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAABs1JREFUSInllv2PVFcZxz/n3LfZmdmd3ZndZWGhhV0qYLaFEgzQpog12tZYbVRCSa00mLap6Q+aNERp5QcVlRhi0GjaGElromI08aU1tMRXWmspRaEVbIDtdimwy77M7uy83Xvn3nP84c7b7oD/QE8yyT13znO/z/f7nOcF3m9L1B4OnNYYEoSG165kGZkukLLjdEmXiew4yum7+4qK31u2rduLFXOgEEoQCrQs9RjepaW2f35Nu/9QqRh4Fi4jrkHCMmhTitlCBcOIoP768CoAzGt5owFLQBKfad/Yflau+Mo4qY0IE8qAUbXUgKT9ctFZVJAzqzcivLN+/JGY0H6HKD0riKGvw7gFWAFtUmMTyFPF5C+Gded2LBmBaB2BAigRyeMJ0jGPgxtiyX+MtW18/ZL1DLEMK/TER9eb+Z2GQGU1CK0b8gKy9uCYYJmQcUCgUm+U0qeGw/R2pIwAdbPvAiE0aAGux0MDc7eJAJ57V7+GZYAQjLDo8yd0z6lAqQ5bBbh+iF8JWxmP5XwSJrhCyz9NJU7mdHwwknOBWEKAAq0EuIrPrKp8d3lb+M/HT/qvlsN2pKNRSoDUXAxSN+eKlWMPD7jrFi3pZc4NeHUh4+zcNMW5q/z47dLhi4X4IHYt2hFDBBFDpUmYJXoNb+y23tzPHlgRfu2F8bZ9s4W2zdgSpap2OopbzsysPUHX85YIcdU1YnxLX5pT0+59w+X4NqwmpgIIgUCxNF4+vsaY2bsknjtq+yYTnsGhMx33H8127SFp03KTBBAT/H3U+qTIZe9ambFfagHOl0OOjJs/wjCZdwtCARI2d899Z0iP7Rkv2J0ngu49xUCvu1R2+sJS6g4MAyF11deasY5+CjBs3jE6f3KrMXlDC/Cfr0xuuegtWYIpmjwXUA7YcbP69tb2ypPfO5naPyJ7d4fKioLUDihdVxZEpI4ApGiEyoKLM8aydyx5J/CXeTE+m5PbkFZV4qpBoPlAJnh7R7rw5G8vm9+/4PfvDg0rSiMdgYraeQ0xGVZu78o9tSUx9ViK0pUGc0CbTNtdu1oYG7Geu+vFAaLbqz0+3B1sf2WKnhcvJ79MvCn21JiKiGIAt6amn9scK+4brpiskOHMKRU/jCSS2xG8ddVbVcOrM54KrBvqoERyO4YqLTaKb76ct7+JtufHfuEyYKIkeoKKpN12ySs1QF28qkJmrL8FuBwqv7HTEELC4b/Fks/EjPgcDq05TeO8EJrhSten35KLDjpmhfd8/QBNYY6clp0twC1LAmGQLJdyCF08gub/MtYCECZni+JBTyYwrKS7ML2UbrxplEwpHeoJHkk9IPO/z3QluKen/GC/MXuM8PrIQkc3+sY298hAwsIQbSvnAWuwpSq3AGesyhhh08EwZKBdHi+EDjEkyxLBm9dtNYjqXx5DTnHvsCeXFCoi1fh6VPEsEYy3ACf1zN9qlRE0whAcdzM/GCk5Hz+W1dv+U0jubFy+aqdpFsCD9en8r4ba9fDLU6mfI8wo7Zqc65Ccru3q6dQtC79EVb6AUc1lQzJakP2jOvUSZrqKUgu0QMvqNgBkyOpk7ndfXKruP+11Pf5uwdgqHYWqHwIIGTTLh88tBN7a3/3i+VF/ZtyzujAFut57a0d0A1sDpdzoUkfMdCTNs4Pm3MG1nfL1Fy7bjxwtxn6IXfOzauNDZ6w8u67Pf/7IQuDB3hSfCMtPHDoX/hTDaJKxXgzR1ca/PjnzxOL47IGgXOYG2+U9f/Gyw1Op31yYsz6LKcEEpZryyPe5d1B+dWnf4rrwdeATo+P0yfBQr53cOVHp2oIjWpo/LgwlZp/etdo78MeJ9DeO5cUmM+fflNcdy9E2ONGkoWvZIQSUFGt63ZNb+hPPzPr1S9KUTlYndizDl1Zan+qOlXNUqobVD2gPMubcyP4PlR57Ix979MhI+9fLRsfH8qJ7OYYNhkZo1dRfNATQ3ebmdq2073KFQTmgFfjG7jjprjgrMsncPb2FDXEKkwRV8BCEGbD7g2LNmdnYwLPn257Gro6kNMaixlQlwJckVXbyvszsBseJTU+VqA4JC4DdisavwNUy2Ia4sCk5OdRvzLxCBXAVj64NdvTGtbf337ETaBvMa3V9EQ2BFbgpkf/XnbHpIUuHF2YrYMqGgPNi3OxJIZQgjYmNidIdYwHfyjpZ3ZGtHN6fXXbOVfE0MebncHXMAUiL4uRHlpQP3pJW+04OC3KhST+tw8k152oJeEpQNGxWx0tP+WGeK0Xbcb3SWCYpTS80ul0lECi0EF6n8LNJOzjThvuHobj/603dTnFcORQDQcf1y937bP0Pc6b8FW3Czt0AAAAASUVORK5CYII=" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用双线部署，默认线路托管于Vercel" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
     console.log('已挂载butterfly_footer_beautify')
     parent_div_git.insertAdjacentHTML("beforeend",item_html)
     }
@@ -718,4 +503,4 @@ document.addEventListener('pjax:error', (e) => {
   else if (epage === cpage){
     butterfly_footer_beautify_injector_config();
   }
-  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":true,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/unitychan.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":40,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body></html>
+  </script><script async src="/js/footer_beautify/runtime.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":true,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/unitychan.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":40,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body></html>
