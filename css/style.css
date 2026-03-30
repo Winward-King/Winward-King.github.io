@@ -1,7 +1,11 @@
-/*诗句引用*/
-.poem{
-  font-family:"迷你繁智草";
-  src: url("./迷你繁智草.ttf"); 
+/* 瑞美家张青平硬笔行书 */
+@font-face {
+  font-family: "ruimei";
+  src: url("/css/ruimeijiazhangqingpingyingbixingshu.ttf");
+}
+table.poem {
+  font-family: "ruimei", cursive;
+  font-size: 1.2em;
 }
 /* 文章页背景 */
 /*  
